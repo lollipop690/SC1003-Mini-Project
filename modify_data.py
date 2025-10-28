@@ -154,7 +154,7 @@ def school_score(students): #grades how diverse each group is(lower better)
 
     return score
 
-def plotGraph(tutorial_groups):
+def plotGraph(tutorial_groups,, out_path):
     data1, data2, data3 = [], [], []
     for tg, students in tutorial_groups.items():
         cgpa = total_cgpa_variance(students)
@@ -187,9 +187,9 @@ def plotGraph(tutorial_groups):
     axis[2].set_ylabel("%")
 
     plt.tight_layout()
-    plt.savefig(os.path.join("Mixed.png"))
+    plt.savefig(out_path)
 
 records = read_student_data("records_modified.csv")
 tutorial_groups = students_by_tg(records)
 
-plotGraph(tutorial_groups)
+plotGraph(tutorial_groups, os.path.join("analysis_plots_final/Mixed.png"))
