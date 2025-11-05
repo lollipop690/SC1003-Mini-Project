@@ -1,3 +1,4 @@
+import os
 import time
 import csv
 import random  #for O numbers, N=number of students,G = number of tgs, S = number of students per tg - N = GS
@@ -220,9 +221,9 @@ def write_output_csv(final_student_list, output_path): #O(N)
 # 4. MAIN EXECUTION BLOCK 
 # ==============================================================================
 
-if __name__ == "__main__":
+def snakedraft(file_in):
     # --- Step 1: Read and Group Data ---
-    all_students = read_student_data("records.csv")
+    all_students = read_student_data(file_in)
     
     if all_students:
         tutorial_groups = group_students_by_tutorial(all_students)
@@ -249,9 +250,11 @@ if __name__ == "__main__":
 
         # --- Step 3: Finalize and Export ---
         final_list = assign_team_numbers_and_flatten(all_optimized_teams)
-        write_output_csv(final_list, "./tmp/final_teams_snake_draft.csv")
 
-        with open('./tmp/snake_draft.txt', 'w') as file:
+        output_path = os.path.dirname(__file__).replace("algorithms", "") + "tmp"
+        write_output_csv(final_list, f"{output_path}/final_teams_snake_draft.csv")
+
+        with open(f"{output_path}/snakedraft.txt", 'w') as file:
             for t in times:
                 file.write(f"{t}\n")
 

@@ -42,37 +42,6 @@ def group_data_by_team(student_data):
     return teams
 
 # ==============================================================================
-# 2. RANDOM ALLOCATION GENERATOR
-# ==============================================================================
-
-def generate_random_allocation(original_records_path="records.csv"):
-    """Creates a random team allocation to serve as a baseline for comparison."""
-    print("Generating a random allocation for comparison...")
-    try:
-        with open(original_records_path, mode='r', newline='', encoding='utf-8') as file:
-            all_students = list(csv.DictReader(file))
-    except FileNotFoundError:
-        print(f"Error: The original records file '{original_records_path}' was not found.")
-        return None
-
-    tutorial_groups = {}
-    for student in all_students:
-        tg = student["Tutorial Group"]
-        if tg not in tutorial_groups:
-            tutorial_groups[tg] = []
-        tutorial_groups[tg].append(student)
-
-    randomly_assigned_students = []
-    for tg_name, students in tutorial_groups.items():
-        random.shuffle(students)
-        for i, student in enumerate(students):
-            team_number = (i // 5) + 1
-            student['Team Assigned'] = team_number
-            randomly_assigned_students.append(student)
-            
-    return randomly_assigned_students
-
-# ==============================================================================
 # 3. ANALYSIS AND STATISTICS
 # ==============================================================================
 
@@ -107,6 +76,18 @@ def calculate_team_stats(teams_data):
             
     return stats
 
+#Measure execution time of each algorithm
+def read_execution_time(filename):
+    with open(filename, 'r') as file:
+        times = []
+        
+        time = file.readline()
+        while (time != ""):
+            times.append(float(time))
+            time = file.readline()
+
+    return times
+
 # ==============================================================================
 # 4. PLOTTING FUNCTIONS
 # ==============================================================================
@@ -114,7 +95,6 @@ def calculate_team_stats(teams_data):
 def plot_cgpa_distribution(all_stats, save_path):
     """Creates a comparative box plot of average team CGPAs for all methods."""
     fig, ax = plt.subplots(figsize=(16, 8))
-    plt.tight_layout()
 
     def update(frame):
         ax.clear()
@@ -133,7 +113,6 @@ def plot_cgpa_distribution(all_stats, save_path):
 def plot_gender_balance(all_stats, save_path):
     """Creates a comparative bar chart of team gender compositions."""
     fig, ax = plt.subplots(figsize=(18, 10))
-    plt.tight_layout()
     
     width = 0.15
     offsets = [-2 * width, -width, 0, width, 2 * width]
@@ -170,7 +149,6 @@ def plot_school_diversity(all_stats, save_path):
     offsets = [-2 * width, -width, 0, width, 2 * width]
 
     fig, ax = plt.subplots(figsize=(12, 8))
-    plt.tight_layout()
 
     def update(frame):
         ax.clear()
@@ -189,34 +167,57 @@ def plot_school_diversity(all_stats, save_path):
     ani.save(save_path, writer="ffmpeg", fps=144)
     print(f"Saved school diversity plot to {save_path}")
 
+def plot_execution_time(option):
+    input_path = os.path.dirname(__file__) + f"/tmp"
+
+    fig, ax = plt.subplots(2, 2)
+    ax[0, 0].plot(read_execution_time(f"{input_path}/snakedraft.txt"), color = 'b')
+    ax[0, 1].plot(read_execution_time(f"{input_path}/hardgendercap.txt"), color = 'g')
+    ax[1, 0].plot(read_execution_time(f"{input_path}/outlierfocused.txt"), color = 'm')
+    ax[1, 1].plot(read_execution_time(f"{input_path}/GPAoptimized.txt"), color = 'y')
+
+    ax[0, 0].set_title("Snake Draft")
+    ax[0, 1].set_title("Hard Gender Cap")
+    ax[1, 0].set_title("Outlier Focused")
+    ax[1, 1].set_title("GPA Optimized")
+
+    ax[0, 0].set_ylabel("seconds")
+    ax[0, 1].set_ylabel("seconds")
+    ax[1, 0].set_ylabel("seconds")
+    ax[1, 1].set_ylabel("seconds")
+
+    plt.tight_layout()
+
+    output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
+    plt.savefig(f"{output_path}/execution_time.png")
+
 # ==============================================================================
 # 5. MAIN EXECUTION BLOCK
 # ==============================================================================
 
-if __name__ == "__main__":
+def data_visualization(option):
+    input_path = os.path.dirname(__file__) + f"/tmp"
     FILES = {
-        'Snake Draft': "./tmp/final_teams_snake_draft.csv",
-        'Gender Priority': "./tmpfinal_teams_gender_priority.csv",
-        'Outlier Focused': "./tmp/final_teams_outlier_focused.csv",
-        'GPA Optimized': "./tmp/final_teams_gpa_optimized.csv"
+        'Snake Draft': f"{input_path}/final_teams_snake_draft.csv",
+        'Gender Priority': f"{input_path}/final_teams_gender_priority.csv",
+        'Outlier Focused': f"{input_path}/final_teams_outlier_focused.csv",
+        'GPA Optimized': f"{input_path}/final_teams_gpa_optimized.csv",
+        "Random": f"{input_path}/finals_teams_randomized.csv"
     }
     
     all_data = {label: read_allocation_data(path) for label, path in FILES.items()}
-    all_data['Random'] = generate_random_allocation()
 
     if all(all_data.values()):
         print("\n--- Analyzing All Allocations ---")
         
         all_teams = {label: group_data_by_team(data) for label, data in all_data.items()}
         all_stats = [calculate_team_stats(all_teams[label]) for label in LABELS]
-        total_teams = len(all_teams['Snake Draft'])
 
-        output_dir = "analysis_plots_final"
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir)
+        output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
 
-        plot_cgpa_distribution(all_stats, os.path.join(output_dir, "final_comparison_cgpa.mp4"))
-        plot_gender_balance(all_stats, os.path.join(output_dir, "final_comparison_gender.mp4"))
-        plot_school_diversity(all_stats, os.path.join(output_dir, "final_comparison_school.mp4"))
+        plot_cgpa_distribution(all_stats, f"{output_path}/final_comparison_cgpa.mp4")
+        plot_gender_balance(all_stats, f"{output_path}/final_comparison_gender.mp4")
+        plot_school_diversity(all_stats, f"{output_path}/final_comparison_school.mp4")
+        plot_execution_time(option)
             
-        print(f"\nAll final comparison plots have been saved in the '{output_dir}' folder.")
+        print(f"\nAll final comparison plots have been saved in the '{output_path}' folder.")

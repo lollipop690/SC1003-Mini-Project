@@ -1,3 +1,4 @@
+import os
 import time
 import csv
 
@@ -147,8 +148,8 @@ def write_output_csv(final_student_list, output_path):
     print(f"Successfully created gender-priority allocation file: {output_path}")
 
 
-if __name__ == "__main__":
-    all_students = read_student_data("records.csv")
+def hardgendercap(file_in):
+    all_students = read_student_data(file_in)
     
     if all_students:
         tutorial_groups = group_students_by_tutorial(all_students)
@@ -167,8 +168,10 @@ if __name__ == "__main__":
             times.append(time.time() - start)
 
         final_list = assign_team_numbers_and_flatten(all_final_teams)
-        write_output_csv(final_list, "./tmp/final_teams_gender_priority.csv")
 
-        with open('./tmp/hardgendercap.txt', 'w') as file:
+        output_path = os.path.dirname(__file__).replace("algorithms", "") + "tmp"
+        write_output_csv(final_list, f"{output_path}/final_teams_gender_priority.csv")
+
+        with open(f"{output_path}/hardgendercap.txt", 'w') as file:
             for t in times:
                 file.write(f"{t}\n")

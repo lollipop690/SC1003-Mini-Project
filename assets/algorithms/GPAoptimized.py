@@ -1,3 +1,4 @@
+import os
 import time
 import csv
 
@@ -76,7 +77,7 @@ def optimize_teams_with_gpa_check(teams_in_tg):
     DIVERSITY_WEIGHT = 0.70
     CGPA_WEIGHT = 0.30  #weights
 
-    for k in range(1000): #this number is the number of tests to run
+    for k in range(50): #this number is the number of tests to run
         current_diversity_score = sum(diversity_score(t) for t in teams_in_tg)
         current_cgpa_variance = total_cgpa_variance(teams_in_tg) #calculate the initial score and variance for this instance here
 
@@ -146,27 +147,29 @@ def write_output_csv(final_student_list, output_path="final_teams_gpa_optimized.
         writer.writerows(output_data) #write file
     print(f"Successfully created GPA-optimized allocation file: {output_path}")
 
-data = read_student_data("records.csv") #reads data
+def GPAoptimized(file_in):
+    data = read_student_data(file_in) #reads data
     
-if data: #incase the data is invalid
-    tutorial_groups = students_by_tg(data)
-    all_optimized_teams = {}
-        
-    times = []
+    if data: #incase the data is invalid
+        tutorial_groups = students_by_tg(data)
+        all_optimized_teams = {}
+            
+        times = []
 
-    for tg_name, students in tutorial_groups.items():
-        start = time.time()
+        for tg_name, students in tutorial_groups.items():
+            start = time.time()
 
-        print(f"Processing Tutorial Group: {tg_name}...")
-        initial_teams = snake_draft(students)
-        optimized_teams = optimize_teams_with_gpa_check(initial_teams)
-        all_optimized_teams[tg_name] = optimized_teams
+            print(f"Processing Tutorial Group: {tg_name}...")
+            initial_teams = snake_draft(students)
+            optimized_teams = optimize_teams_with_gpa_check(initial_teams)
+            all_optimized_teams[tg_name] = optimized_teams
 
-        times.append(time.time() - start)
+            times.append(time.time() - start)
 
-    final_list = data_compilation(all_optimized_teams)
-    write_output_csv(final_list, "./tmp/final_teams_gpa_optimized.csv")
+        final_list = data_compilation(all_optimized_teams)
+        output_path = os.path.dirname(__file__).replace("algorithms", "") + "tmp"
+        write_output_csv(final_list, f"{output_path}/final_teams_gpa_optimized.csv")
 
-    with open('./tmp/optimization.txt', 'w') as file:
-        for t in times:
-            file.write(f"{t}\n")
+        with open(f"{output_path}/GPAoptimized.txt", 'w') as file:
+            for t in times:
+                file.write(f"{t}\n")
