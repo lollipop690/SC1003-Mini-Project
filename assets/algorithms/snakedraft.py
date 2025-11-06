@@ -1,72 +1,17 @@
-import os
 import time
-import csv
-import random  #for O numbers, N=number of students,G = number of tgs, S = number of students per tg - N = GS
 
-# ==============================================================================
-# 1. DATA READING AND PRE-PROCESSING
-# ==============================================================================
-
-def read_student_data(file_path="records.csv"): #O(N)
-    """
-    Reads student data from a CSV file into a list of dictionaries.
-    Converts CGPA to a float for numerical operations.
-    [cite_start][cite: 25, 34]
-    """
-    records = []
-    try:
-        with open(file_path, mode='r', newline='', encoding='utf-8') as file:
-            reader = csv.DictReader(file)
-            for row in reader:
-                # Convert CGPA to float for sorting and calculations
-                row['CGPA'] = float(row['CGPA'])
-                records.append(row)
-    except FileNotFoundError:
-        print(f"Error: The file {file_path} was not found.")
-        return None
-    return records
-
-def group_students_by_tutorial(student_data): #O(N)
-    """
-    Groups a list of students by their tutorial group.
-    This ensures teams are formed only with members from the same group.
-    [cite_start][cite: 26]
-    """
-    tutorial_groups = {}
-    for student in student_data:
-        tg = student["Tutorial Group"]
-        if tg not in tutorial_groups:
-            tutorial_groups[tg] = []
-        tutorial_groups[tg].append(student)
-    return tutorial_groups
-
-# ==============================================================================
-# 2. CORE TEAM ALLOCATION LOGIC
-# ==============================================================================
-
-def create_teams_snake_draft(students_in_tg, num_teams=10): #O(SlogS)
-    """
-    Performs an initial, CGPA-balanced team assignment for one tutorial group.
-    It sorts students by CGPA and distributes them using a snake draft to
-    [cite_start]balance academic performance from the start. [cite: 30]
-    """
-    # Sort students by CGPA from highest to lowest
-    students_sorted = sorted(students_in_tg, key=lambda s: s['CGPA'], reverse=True)
-
-    # Initialize 10 empty teams
-    teams = [[] for _ in range(num_teams)]
+def snake_draft(students_in_tg, num_teams=10): #this function creates a WIP grouping for an individual tg based solely on gpa in a snake draft format
+    students_sorted = sorted(students_in_tg, key=lambda s: s['CGPA'], reverse=True) #essentially, this lambda function will pull every student in order of their cgpa from lowest to highest, which is then reversed. note that a lambda function is just a function as a key in a dict
+    teams = [[] for tm in range(num_teams)] # generates an empty list for each team
     
     current_team_index = 0
-    direction = 1  # 1 for forward (0->9), -1 for backward (9->0)
+    direction = 1
 
     for student in students_sorted:
-        teams[current_team_index].append(student)
-
-        # Move to the next team based on the current direction
+        teams[current_team_index].append(student) #adds the student at current index to the current group(ungrouped student with the lowest index-highest gpa)
         current_team_index += direction
 
-        # Reverse direction when the end of the team list is reached
-        if current_team_index == num_teams:
+        if current_team_index == num_teams: #block to reverse direction, creating the snake draft
             direction = -1
             current_team_index = num_teams - 1
         elif current_team_index == -1:
@@ -75,45 +20,30 @@ def create_teams_snake_draft(students_in_tg, num_teams=10): #O(SlogS)
             
     return teams
 
-def calculate_team_score(team): #O(1)
-    """
-    Calculates a "penalty" score for a single team based on diversity criteria.
-    A perfect team scores 0. Points are added for having a majority
-    (3 or more) [cite_start]of one gender or from one school. [cite: 28, 29]
-    """
+def diversity_score(team): #grades how diverse each group is(lower better)
     score = 0
     gender_counts = {}
     school_counts = {}
 
-    # Count occurrences of each gender and school
     for student in team:
-        gender = student['Gender']
-        school = student['School']
-        gender_counts[gender] = gender_counts.get(gender, 0) + 1
-        school_counts[school] = school_counts.get(school, 0) + 1
+        gender_counts[student['Gender']] = gender_counts.get(student['Gender'], 0) + 1
+        school_counts[student['School']] = school_counts.get(student['School'], 0) + 1
 
-    # Add penalty for gender majority (3 or more members of the same gender)
     for count in gender_counts.values():
         if count >= 3:
-            score += (count - 2) * 10  # Penalize each member over the threshold of 2
+            score += (count - 2) * 10 #every 3rd person onwards of the same gender will add 10 to the diversity score
 
-    # Add penalty for school majority (3 or more members from the same school)
     for count in school_counts.values():
-        if count >= 3:
-            score += (count - 2) * 10
+        if count >= 2:
+            score += (count - 2) * 10 #every 2nd person onwards of the same school will add 10 to the diversity score
 
     return score
 
-def optimize_teams(teams_in_tg): #O(1)
-    """
-    Iteratively improves team diversity by swapping students between the team
-    with the highest penalty score and other teams, aiming to reduce the
-    overall score for the tutorial group.
-    """
+def optimize_teams(teams_in_tg): 
     # A high number of iterations to allow for thorough optimization
-    for _ in range(500):
+    for k in range(500):
         # Calculate scores for all teams
-        scores = [calculate_team_score(team) for team in teams_in_tg]
+        scores = [diversity_score(team) for team in teams_in_tg]
         total_score = sum(scores)
         
         # If the total score is 0, the teams are perfectly balanced
@@ -144,7 +74,7 @@ def optimize_teams(teams_in_tg): #O(1)
                     worst_team[s1_idx], other_team[s2_idx] = other_team[s2_idx], worst_team[s1_idx]
                     
                     # Check if the swap is beneficial
-                    new_score_sum = calculate_team_score(worst_team) + calculate_team_score(other_team)
+                    new_score_sum = diversity_score(worst_team) + diversity_score(other_team)
                     improvement = current_score_sum - new_score_sum
 
                     # If this is the best improvement found so far, save it
@@ -167,97 +97,22 @@ def optimize_teams(teams_in_tg): #O(1)
 
     return teams_in_tg
 
-
-# ==============================================================================
-# 3. DATA FINALIZATION AND OUTPUT
 # ==============================================================================
 
-def assign_team_numbers_and_flatten(all_optimized_tgs): #O(N)
-    """
-    Takes the final optimized team structures, assigns a team number (1-10)
-    to each student, and flattens the data back into a single list for export.
-    [cite_start][cite: 38, 39]
-    """
-    final_student_list = []
+def snakedraft(tutorial_groups: dict):
+    all_optimized_teams = {}
     
-    # Sort tutorial groups for consistent output order
-    sorted_tg_names = sorted(all_optimized_tgs.keys())
+    # --- Step 2: Process Each Tutorial Group ---
+    times = []
 
-    for tg_name in sorted_tg_names:
-        list_of_teams = all_optimized_tgs[tg_name]
-        for team_index, team in enumerate(list_of_teams):
-            team_number = team_index + 1
-            for student in team:
-                # Add the new "Team Assigned" column to each student's record
-                student["Team Assigned"] = team_number
-                final_student_list.append(student)
-                
-    return final_student_list
+    for tg_name, students in tutorial_groups.items():
+        start = time.time()
 
-def write_output_csv(final_student_list, output_path): #O(N)
-    """
-    Writes the final list of students with assigned teams to a new CSV file.
-    [cite_start]The headers match the project requirements. [cite: 38]
-    """
-    if not final_student_list:
-        print("No data available to write to CSV.")
-        return
+        print(f"Processing Tutorial Group: {tg_name}...")
+        initial_teams = snake_draft(students)
+        optimized_teams = optimize_teams(initial_teams)
+        all_optimized_teams[tg_name] = optimized_teams
 
-    headers = ["Tutorial Group", "Team Assigned", "Student ID", "Name", "School", "Gender", "CGPA"]
-    
-    # Create a list of dictionaries with the correct header order
-    output_data = []
-    for student in final_student_list:
-        ordered_student = {header: student.get(header) for header in headers}
-        output_data.append(ordered_student)
+        times.append(time.time() - start)
 
-    with open(output_path, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames=headers)
-        writer.writeheader()
-        writer.writerows(output_data)
-    print(f"Successfully created team allocation file: {output_path}")
-
-# ==============================================================================
-# 4. MAIN EXECUTION BLOCK 
-# ==============================================================================
-
-def snakedraft(file_in):
-    # --- Step 1: Read and Group Data ---
-    all_students = read_student_data(file_in)
-    
-    if all_students:
-        tutorial_groups = group_students_by_tutorial(all_students)
-        
-        all_optimized_teams = {}
-        
-        # --- Step 2: Process Each Tutorial Group ---
-        times = []
-
-        for tg_name, students in tutorial_groups.items():
-            start = time.time()
-
-            print(f"Processing Tutorial Group: {tg_name}...")
-            
-            # Create initial teams balanced by CGPA
-            initial_teams = create_teams_snake_draft(students)
-            
-            # Optimize for gender and school diversity
-            optimized_teams = optimize_teams(initial_teams)
-            
-            all_optimized_teams[tg_name] = optimized_teams
-
-            times.append(time.time() - start)
-
-        # --- Step 3: Finalize and Export ---
-        final_list = assign_team_numbers_and_flatten(all_optimized_teams)
-
-        output_path = os.path.dirname(__file__).replace("algorithms", "") + "tmp"
-        write_output_csv(final_list, f"{output_path}/final_teams_snake_draft.csv")
-
-        with open(f"{output_path}/snakedraft.txt", 'w') as file:
-            for t in times:
-                file.write(f"{t}\n")
-
-#==========================================================================
-# Overall Time Complexity = O(N+NlogS)
-#==========================================================================
+    return all_optimized_teams, times

@@ -1,15 +1,10 @@
 import csv
-import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 from matplotlib.animation import FuncAnimation
 
-# ==============================================================================
-# 1. CONFIGURATION AND UTILITY FUNCTIONS
-# ==============================================================================
-
-# Consistent color scheme for all five methods being compared
+# pretty colours :D
 PALETTE = {
     'Snake Draft': 'skyblue',
     'Gender Priority': 'lightgreen',
@@ -19,17 +14,21 @@ PALETTE = {
 }
 LABELS = list(PALETTE.keys())
 
+# ==============================================================================
+# 1. CSV
+# ==============================================================================
+
+# It's the same function for extracting csv data XXX
 def read_allocation_data(file_path):
-    """Reads a team allocation CSV into a list of dictionaries."""
     try:
-        with open(file_path, mode='r', newline='', encoding='utf-8') as file:
+        with open(file_path, mode='r', newline='') as file:
             return list(csv.DictReader(file))
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found. Please ensure all allocation scripts have been run.")
         return None
 
+# students_by_tg() except we have 'Team Assigned' now
 def group_data_by_team(student_data):
-    """Groups a flat list of students into a dictionary of teams."""
     teams = {}
     if not student_data:
         return teams
@@ -42,11 +41,21 @@ def group_data_by_team(student_data):
     return teams
 
 # ==============================================================================
-# 3. ANALYSIS AND STATISTICS
+# 2. ANALYSIS FUNCTIONS
 # ==============================================================================
 
+"""
+INPUT: teams_data: dict -> The data containing all the teams
+OUTPUT: stats: dict -> Statistics data (average cgpa, gender compositions, school majorities)
+
+The statistics contain 3 categories:
+- avg_cgpas: list(float) -> Average cgpas of each teams
+- gender_compositions: list(str) -> Encoded string (Example: "0F5M" = 0 females and 5 males)
+- school_majorities: list(int) -> True/False (1/0) for each team, decided by whether a team is composed by more than 2 students of the same school
+
+The reason why school_majorities is list(int) is to help "visualize" the data (for video) <- why
+"""
 def calculate_team_stats(teams_data):
-    """Calculates statistics for each team (avg CGPA, gender/school counts)."""
     stats = {'avg_cgpas': [], 'gender_compositions': [], 'school_majorities': []}
     for team_id, students in teams_data.items():
         if not students: continue
@@ -66,7 +75,7 @@ def calculate_team_stats(teams_data):
         for s in students:
             school_counts[s['School']] = school_counts.get(s['School'], 0) + 1
 
-        #This one time checker if else if else is a bane to my existence
+        # This is stupid
         if any(count >= 3 for count in school_counts.values()):
             if (len(stats["school_majorities"]) == 0): stats['school_majorities'].append(1)
             else: stats['school_majorities'].append(stats["school_majorities"][len(stats["school_majorities"]) - 1] + 1)
@@ -76,7 +85,12 @@ def calculate_team_stats(teams_data):
             
     return stats
 
-#Measure execution time of each algorithm
+"""
+INPUT: filename: str -> The filename containing the list of execution time of an algorithm
+OUTPUT: times: list -> The execution times that is translated into a list
+
+This function is only used for reading the execution time data
+"""
 def read_execution_time(filename):
     with open(filename, 'r') as file:
         times = []
@@ -89,11 +103,49 @@ def read_execution_time(filename):
     return times
 
 # ==============================================================================
-# 4. PLOTTING FUNCTIONS
+# 3. PLOTTING FUNCTIONS
 # ==============================================================================
 
+"""
+INPUT: option: str -> Which test case
+
+Use read_execution_time() to plot all the measured execution time for each algorithms
+"""
+def plot_execution_time(option):
+    input_path = os.path.dirname(__file__) + f"/tmp"
+
+    fig, ax = plt.subplots(2, 2)
+    ax[0, 0].plot(read_execution_time(f"{input_path}/snake_draft.txt"), color = 'b')
+    ax[0, 1].plot(read_execution_time(f"{input_path}/gender_priority.txt"), color = 'g')
+    ax[1, 0].plot(read_execution_time(f"{input_path}/outlier_focused.txt"), color = 'm')
+    ax[1, 1].plot(read_execution_time(f"{input_path}/gpa_optimized.txt"), color = 'y')
+
+    ax[0, 0].set_title("Snake Draft")
+    ax[0, 1].set_title("Hard Gender Cap")
+    ax[1, 0].set_title("Outlier Focused")
+    ax[1, 1].set_title("GPA Optimized")
+
+    ax[0, 0].set_ylabel("seconds")
+    ax[0, 1].set_ylabel("seconds")
+    ax[1, 0].set_ylabel("seconds")
+    ax[1, 1].set_ylabel("seconds")
+
+    plt.tight_layout()
+
+    output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
+    plt.savefig(f"{output_path}/execution_time.png")
+
+"""
+For each functions below, the structure is this:
+
+INPUT: all_stats: list -> Statistics for each algorithms
+
+- Initialize plt.subplots() for plotting
+- Make an update(frame) function for timelapse
+- Use FuncAnimation and "ffmpeg" to make a timelapse of the graphs
+"""
+
 def plot_cgpa_distribution(all_stats, save_path):
-    """Creates a comparative box plot of average team CGPAs for all methods."""
     fig, ax = plt.subplots(figsize=(16, 8))
 
     def update(frame):
@@ -111,16 +163,16 @@ def plot_cgpa_distribution(all_stats, save_path):
     print(f"Saved CGPA distribution plot to {save_path}")
 
 def plot_gender_balance(all_stats, save_path):
-    """Creates a comparative bar chart of team gender compositions."""
     fig, ax = plt.subplots(figsize=(18, 10))
     
     width = 0.15
     offsets = [-2 * width, -width, 0, width, 2 * width]
 
     def update(frame):
+        # This line is a sorcery for a simple counting problem
         all_counts = [{k: stats['gender_compositions'][0:frame].count(k) for k in set(stats['gender_compositions'])} for stats in all_stats]
 
-        all_keys = sorted(list(set.union(*(set(counts.keys()) for counts in all_counts))))
+        all_keys = ["0F-5M", "1F-4M", "2F-3M", "3F-2M", "4F-1M", "5F-0M"]
 
         ax.clear()
         ax.set_ylim(0, 800)
@@ -128,7 +180,6 @@ def plot_gender_balance(all_stats, save_path):
         ax.set_title(f"Comparison of Team Gender Composition (Frame: {frame + 1}/1200)", fontsize=16)
         ax.set_xticks(range(len(all_keys)))
         ax.set_xticklabels(all_keys, rotation=45, ha="right")
-        #ax.legend()
         ax.grid(axis='y', linestyle='--', alpha=0.7)
 
         for i, (label, counts) in enumerate(zip(LABELS, all_counts)):
@@ -142,7 +193,6 @@ def plot_gender_balance(all_stats, save_path):
     print(f"Saved gender balance plot to {save_path}")
 
 def plot_school_diversity(all_stats, save_path):
-    """Compares the number of teams with a school majority."""
     labels = ['Majority Exists', 'No Majority']
     x = range(len(labels))
     width = 0.15
@@ -157,7 +207,6 @@ def plot_school_diversity(all_stats, save_path):
         ax.set_title(f"Comparison of School Diversity in Teams (Majority >= 3) (Frame: {frame + 1}/1200)", fontsize=16)
         ax.set_xticks(x)
         ax.set_xticklabels(labels)
-        #ax.legend()
         
         for i, (label, stats) in enumerate(zip(LABELS, all_stats)):
             values = [stats['school_majorities'][frame], frame - stats['school_majorities'][frame]]
@@ -167,33 +216,15 @@ def plot_school_diversity(all_stats, save_path):
     ani.save(save_path, writer="ffmpeg", fps=144)
     print(f"Saved school diversity plot to {save_path}")
 
-def plot_execution_time(option):
-    input_path = os.path.dirname(__file__) + f"/tmp"
-
-    fig, ax = plt.subplots(2, 2)
-    ax[0, 0].plot(read_execution_time(f"{input_path}/snakedraft.txt"), color = 'b')
-    ax[0, 1].plot(read_execution_time(f"{input_path}/hardgendercap.txt"), color = 'g')
-    ax[1, 0].plot(read_execution_time(f"{input_path}/outlierfocused.txt"), color = 'm')
-    ax[1, 1].plot(read_execution_time(f"{input_path}/GPAoptimized.txt"), color = 'y')
-
-    ax[0, 0].set_title("Snake Draft")
-    ax[0, 1].set_title("Hard Gender Cap")
-    ax[1, 0].set_title("Outlier Focused")
-    ax[1, 1].set_title("GPA Optimized")
-
-    ax[0, 0].set_ylabel("seconds")
-    ax[0, 1].set_ylabel("seconds")
-    ax[1, 0].set_ylabel("seconds")
-    ax[1, 1].set_ylabel("seconds")
-
-    plt.tight_layout()
-
-    output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
-    plt.savefig(f"{output_path}/execution_time.png")
-
 # ==============================================================================
-# 5. MAIN EXECUTION BLOCK
+# 4. MAIN
 # ==============================================================================
+
+"""
+INPUT: option: str -> Which test case
+
+plotplotplotplot
+"""
 
 def data_visualization(option):
     input_path = os.path.dirname(__file__) + f"/tmp"

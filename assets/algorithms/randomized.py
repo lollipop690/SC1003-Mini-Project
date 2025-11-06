@@ -2,23 +2,8 @@ import random
 import csv
 import os
 
-def randomized(file_in):
+def randomized(tutorial_groups: dict):
     """Creates a random team allocation to serve as a baseline for comparison."""
-    print("Generating a random allocation for comparison...")
-    try:
-        with open(file_in, mode='r', newline='', encoding='utf-8') as file:
-            all_students = list(csv.DictReader(file))
-    except FileNotFoundError:
-        print(f"Error: The original records file '{file_in}' was not found.")
-        return None
-
-    tutorial_groups = {}
-    for student in all_students:
-        tg = student["Tutorial Group"]
-        if tg not in tutorial_groups:
-            tutorial_groups[tg] = []
-        tutorial_groups[tg].append(student)
-
     randomly_assigned_students = []
     for tg_name, students in tutorial_groups.items():
         random.shuffle(students)

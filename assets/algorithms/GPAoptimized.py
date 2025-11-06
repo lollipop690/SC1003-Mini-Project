@@ -1,28 +1,4 @@
-import os
 import time
-import csv
-
-def read_student_data(file_path="records.csv"): # opens file called records.csv
-    records = [] #generates empty list
-    try:
-        with open(file_path, mode='r', newline='') as file:
-            reader = csv.DictReader(file)
-            for row in reader: 
-                row['CGPA'] = float(row['CGPA'])#changes cgpa data type from str to flt, so we can iterate on it
-                records.append(row)#puts the list into the records list, creating list of lists
-    except FileNotFoundError:
-        print(f"Error: The file {file_path} was not found.")#handles situation where file is gone
-        return None
-    return records
-
-def students_by_tg(student_data): #reads the output list of list from the previous function
-    tutorial_groups = {} #empty dict
-    for student in student_data:
-        tg = student["Tutorial Group"] #initialising tg variable to the tg of indv students
-        if tg not in tutorial_groups: 
-            tutorial_groups[tg] = [] #creates new tg if not already present
-        tutorial_groups[tg].append(student) #adds the student to their tg
-    return tutorial_groups
 
 def snake_draft(students_in_tg, num_teams=10): #this function creates a WIP grouping for an individual tg based solely on gpa in a snake draft format
     students_sorted = sorted(students_in_tg, key=lambda s: s['CGPA'], reverse=True) #essentially, this lambda function will pull every student in order of their cgpa from lowest to highest, which is then reversed. note that a lambda function is just a function as a key in a dict
@@ -119,57 +95,21 @@ def optimize_teams_with_gpa_check(teams_in_tg):
             
     return teams_in_tg
 
-def data_compilation(all_optimized_tgs): #prepares data for csv writing and assigns team numbers
-    final_student_list = []
-    sorted_tg_names = sorted(all_optimized_tgs.keys())
+# ==============================================================================
 
-    for tg_name in sorted_tg_names:
-        list_of_teams = all_optimized_tgs[tg_name]#grabs the list of teams in a tg
-        for team_index, team in enumerate(list_of_teams):
-            team_number = team_index + 1 # adds a group number 
-            for student in team:
-                student["Team Assigned"] = team_number #assigns the group number to the student
-                final_student_list.append(student) #adds the student, with all their data into the list as a list
-    return final_student_list
+def GPAoptimized(tutorial_groups: dict):
+    all_optimized_teams = {}
+        
+    times = []
 
-def write_output_csv(final_student_list, output_path="final_teams_gpa_optimized.csv"):
-    if not final_student_list:
-        print("No data available to write.") #incase of faulty inputs
-        return
-    
-    headers = ["Tutorial Group", "Team Assigned", "Student ID", "Name", "School", "Gender", "CGPA"] #initialise the headers
-    
-    output_data = [{header: student.get(header) for header in headers} for student in final_student_list]
+    for tg_name, students in tutorial_groups.items():
+        start = time.time()
 
-    with open(output_path, mode='w', newline='') as file:
-        writer = csv.DictWriter(file, fieldnames=headers)
-        writer.writeheader()
-        writer.writerows(output_data) #write file
-    print(f"Successfully created GPA-optimized allocation file: {output_path}")
+        print(f"Processing Tutorial Group: {tg_name}...")
+        initial_teams = snake_draft(students)
+        optimized_teams = optimize_teams_with_gpa_check(initial_teams)
+        all_optimized_teams[tg_name] = optimized_teams
 
-def GPAoptimized(file_in):
-    data = read_student_data(file_in) #reads data
-    
-    if data: #incase the data is invalid
-        tutorial_groups = students_by_tg(data)
-        all_optimized_teams = {}
-            
-        times = []
+        times.append(time.time() - start)
 
-        for tg_name, students in tutorial_groups.items():
-            start = time.time()
-
-            print(f"Processing Tutorial Group: {tg_name}...")
-            initial_teams = snake_draft(students)
-            optimized_teams = optimize_teams_with_gpa_check(initial_teams)
-            all_optimized_teams[tg_name] = optimized_teams
-
-            times.append(time.time() - start)
-
-        final_list = data_compilation(all_optimized_teams)
-        output_path = os.path.dirname(__file__).replace("algorithms", "") + "tmp"
-        write_output_csv(final_list, f"{output_path}/final_teams_gpa_optimized.csv")
-
-        with open(f"{output_path}/GPAoptimized.txt", 'w') as file:
-            for t in times:
-                file.write(f"{t}\n")
+    return all_optimized_teams, times
