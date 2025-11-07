@@ -146,7 +146,7 @@ INPUT: all_stats: list -> Statistics for each algorithms
 """
 
 def plot_cgpa_distribution(all_stats, save_path):
-    fig, ax = plt.subplots(figsize=(16, 8))
+    fig, ax = plt.subplots(figsize=(16, 9))
 
     def update(frame):
         ax.clear()
@@ -163,7 +163,7 @@ def plot_cgpa_distribution(all_stats, save_path):
     print(f"Saved CGPA distribution plot to {save_path}")
 
 def plot_gender_balance(all_stats, save_path):
-    fig, ax = plt.subplots(figsize=(18, 10))
+    fig, ax = plt.subplots(figsize=(16, 9))
     
     width = 0.15
     offsets = [-2 * width, -width, 0, width, 2 * width]
@@ -198,7 +198,7 @@ def plot_school_diversity(all_stats, save_path):
     width = 0.15
     offsets = [-2 * width, -width, 0, width, 2 * width]
 
-    fig, ax = plt.subplots(figsize=(12, 8))
+    fig, ax = plt.subplots(figsize=(16, 9))
 
     def update(frame):
         ax.clear()
