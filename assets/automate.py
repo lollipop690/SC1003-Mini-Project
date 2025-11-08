@@ -70,7 +70,7 @@ def write_output_csv(final_student_list, output_path="final_teams.csv"):
         print("No data available to write.") #incase of faulty inputs
         return
     
-    headers = ["Tutorial Group", "Team Assigned", "Student ID", "Name", "School", "Gender", "CGPA"] #initialise the headers
+    headers = ["Tutorial Group", "Student ID", "Name", "School", "Gender", "CGPA", "Team Assigned"] #initialise the headers
     
     output_data = [{header: student.get(header) for header in headers} for student in final_student_list]
 

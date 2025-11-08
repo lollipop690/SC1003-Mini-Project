@@ -16,7 +16,7 @@ records = [student1, student2, student3, ...]
 Each student will be represented like this -> {"Tutorial Group": _, "Student ID": _, "Name": _, "School": _, "Gender": _, "CGPA": _}
 """
 
-def read_student_data(file_path="records.csv"): # opens file called records.csv
+def read_student_data(file_path): # opens file called records.csv
     records = [] #generates empty list
     try:
         with open(file_path, mode='r', newline='') as file:
@@ -48,6 +48,8 @@ def students_by_tg(student_data): #reads the output list of list from the previo
 """
 INPUT: final_student_list: list -> The data containing the students
        output_path: str -> The filename for outputting the data
+
+This function is similar to the one in main.ipynb, but in this case we don't have "Team Assigned" yet.
 """
 
 def write_output_csv(final_student_list, output_path="final_teams.csv"):
@@ -83,18 +85,20 @@ In [0, 5] dataset, we categorize the outliers by setting their 2 <= (abs(sd)) <=
 
 def modifyCGPA(students, variation): 
     mean = 2.5 # DO NOT CHANGE PLEASE
-    sd = 0.1 + 1.9 * variation
-    outlier_chance = 0.1 + 0.9 * variation
+    sd = 0.1 + 1.9 * variation # max sd = 2
+    outlier_chance = 0.1 + 0.9 * variation # max outlier_chance = 1 (This means the dataset will consists of "outliers")
 
     for student in students:
         #On a dataset with its data bounded by [0, 5], the max sd = 2.5
         if (random.random() < outlier_chance): #Generate outliers by chance
-            if (random.random() < 0.5): #Lower outliers
+            if (random.random() < 0.5): 
+                #Lower outliers
                 student["CGPA"] =  round(random.uniform(-2.5, -2) + mean, 2)
-            else: #Uppers outliers
+            else: 
+                #Uppers outliers
                 student["CGPA"] = round(random.uniform(2, 2.5) + mean, 2)
-            
-        else: #Generate data with standard deviation of the range [-sd, sd]
+        else: 
+            #Generate data with standard deviation of the range [-sd, sd]
             student["CGPA"] = round(random.uniform(-sd, sd) + mean, 2) 
 
     return students
@@ -124,7 +128,7 @@ def modifyGender(students, variation):
 
     random.shuffle(gender)
     for i in range(0, number_of_students):
-        students[i]["Gender"] = gender[i] #Assign the generated genders to the students]
+        students[i]["Gender"] = gender[i] #Assign the generated genders to the students
 
     return students
 
@@ -141,11 +145,12 @@ there will always be at least (len(students) / len(schools_list)) number of the 
 """
 
 def modifySchool(students, variation): 
-    number_of_students = len(students)
-
+    # Identify the unique schools
     schools_list = []
     for student in students:
         if (student["School"] not in schools_list): schools_list.append(student["School"])
+
+    number_of_students = len(students)
 
     dominant_school = schools_list[0]
     dominant_count = int(min(random.uniform(0.95, 1.05) * variation * number_of_students, number_of_students))
@@ -239,10 +244,9 @@ def plotGraph(tutorial_groups, out_path):
         gender = gender_score(students)
         school = school_score(students)
 
-        #Percentage of CGPA variance (Maximum variance for a [0, 5] dataset = 25/4)
-        data1.append(cgpa / (25 / 4) * 100)
-        data2.append(gender / 50 * 100)
-        data3.append(school / 480 * 100)
+        data1.append(cgpa / (25 / 4) * 100) # Maximum variance for a [0, 5] dataset = 25/4
+        data2.append(gender / 50 * 100) # Maximum score = 50
+        data3.append(school / 480 * 100) # Maximum score = 480
 
     fig, axis = plt.subplots(3)
 
@@ -273,7 +277,7 @@ def plotGraph(tutorial_groups, out_path):
 
 
 """
-- Read the datas contained in "records.csv" (The actual data)
+- Read the datas contained in "records.csv" (The real data)
 - Separate the students by their Tutorial Groups
 """
 

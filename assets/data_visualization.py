@@ -18,7 +18,7 @@ LABELS = list(PALETTE.keys())
 # 1. CSV
 # ==============================================================================
 
-# It's the same function for extracting csv data XXX
+# It's the same function as read_student_data() for extracting csv data XXX
 def read_allocation_data(file_path):
     try:
         with open(file_path, mode='r', newline='') as file:
@@ -74,22 +74,20 @@ def calculate_team_stats(teams_data):
         school_counts = {}
         for s in students:
             school_counts[s['School']] = school_counts.get(s['School'], 0) + 1
-
-        # This is stupid
+        
+        # Cumulative Frequency Style
         if any(count >= 3 for count in school_counts.values()):
             if (len(stats["school_majorities"]) == 0): stats['school_majorities'].append(1)
             else: stats['school_majorities'].append(stats["school_majorities"][len(stats["school_majorities"]) - 1] + 1)
         else:
             if (len(stats["school_majorities"]) == 0): stats['school_majorities'].append(0)
-            stats["school_majorities"].append(stats["school_majorities"][len(stats["school_majorities"]) - 1])
+            else: stats["school_majorities"].append(stats["school_majorities"][len(stats["school_majorities"]) - 1])
             
     return stats
 
 """
 INPUT: filename: str -> The filename containing the list of execution time of an algorithm
 OUTPUT: times: list -> The execution times that is translated into a list
-
-This function is only used for reading the execution time data
 """
 def read_execution_time(filename):
     with open(filename, 'r') as file:
@@ -107,23 +105,23 @@ def read_execution_time(filename):
 # ==============================================================================
 
 """
-INPUT: option: str -> Which test case
-
-Use read_execution_time() to plot all the measured execution time for each algorithms
+INPUT: input_data: dict -> The execution time data for each algorithms
+       save_path: str -> Where to save the graph
 """
-def plot_execution_time(option):
-    input_path = os.path.dirname(__file__) + f"/tmp"
+def plot_execution_time(input_data, save_path):
+    titles = [label for label in input_data.keys()]
+    datas = [time for time in input_data.values()]
 
     fig, ax = plt.subplots(2, 2)
-    ax[0, 0].plot(read_execution_time(f"{input_path}/snake_draft.txt"), color = 'b')
-    ax[0, 1].plot(read_execution_time(f"{input_path}/gender_priority.txt"), color = 'g')
-    ax[1, 0].plot(read_execution_time(f"{input_path}/outlier_focused.txt"), color = 'm')
-    ax[1, 1].plot(read_execution_time(f"{input_path}/gpa_optimized.txt"), color = 'y')
+    ax[0, 0].plot(datas[0], color = 'b')
+    ax[0, 1].plot(datas[1], color = 'g')
+    ax[1, 0].plot(datas[2], color = 'm')
+    ax[1, 1].plot(datas[3], color = 'y')
 
-    ax[0, 0].set_title("Snake Draft")
-    ax[0, 1].set_title("Hard Gender Cap")
-    ax[1, 0].set_title("Outlier Focused")
-    ax[1, 1].set_title("GPA Optimized")
+    ax[0, 0].set_title(titles[0])
+    ax[0, 1].set_title(titles[1])
+    ax[1, 0].set_title(titles[2])
+    ax[1, 1].set_title(titles[3])
 
     ax[0, 0].set_ylabel("seconds")
     ax[0, 1].set_ylabel("seconds")
@@ -131,30 +129,32 @@ def plot_execution_time(option):
     ax[1, 1].set_ylabel("seconds")
 
     plt.tight_layout()
-
-    output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
-    plt.savefig(f"{output_path}/execution_time.png")
+    plt.savefig(save_path)
 
 """
 For each functions below, the structure is this:
 
 INPUT: all_stats: list -> Statistics for each algorithms
+       save_path -> Where to save the graph
 
 - Initialize plt.subplots() for plotting
 - Make an update(frame) function for timelapse
-- Use FuncAnimation and "ffmpeg" to make a timelapse of the graphs
+- Use FuncAnimation and "ffmpeg" (For faster converting to mp4) to make a timelapse of the graphs
 """
 
 def plot_cgpa_distribution(all_stats, save_path):
     fig, ax = plt.subplots(figsize=(16, 9))
 
     def update(frame):
+        datas = [stats["avg_cgpas"][0:frame] for stats in all_stats] 
+
         ax.clear()
         ax.set_xticks(range(len(LABELS)), LABELS, rotation=15)
         ax.set_title(f"Comparison of Average Team CGPA Distribution (Frame: {frame + 1}/1200)", fontsize=16)
         ax.set_ylabel('Average CGPA')
         ax.grid(axis='y', linestyle='--', alpha=0.7)
-        sns.boxplot([stats["avg_cgpas"][0:frame] for stats in all_stats], palette=list(PALETTE.values()))
+
+        sns.boxplot(datas, palette=list(PALETTE.values()))
 
         return ax,
 
@@ -162,17 +162,18 @@ def plot_cgpa_distribution(all_stats, save_path):
     ani.save(save_path, writer="ffmpeg", fps=144)
     print(f"Saved CGPA distribution plot to {save_path}")
 
-def plot_gender_balance(all_stats, save_path):
+def plot_gender_composition(all_stats, save_path):
     fig, ax = plt.subplots(figsize=(16, 9))
     
+    # Separating each algorithms' result by "width"
     width = 0.15
     offsets = [-2 * width, -width, 0, width, 2 * width]
 
     def update(frame):
-        # This line is a sorcery for a simple counting problem
-        all_counts = [{k: stats['gender_compositions'][0:frame].count(k) for k in set(stats['gender_compositions'])} for stats in all_stats]
-
         all_keys = ["0F-5M", "1F-4M", "2F-3M", "3F-2M", "4F-1M", "5F-0M"]
+
+        # Counting the gender composition
+        all_counts = [{keys: stats['gender_compositions'][0:frame].count(keys) for keys in all_keys} for stats in all_stats]
 
         ax.clear()
         ax.set_ylim(0, 800)
@@ -190,11 +191,10 @@ def plot_gender_balance(all_stats, save_path):
 
     ani = FuncAnimation(fig, update, frames=1200, interval=50, repeat=True, blit=False)
     ani.save(save_path, writer="ffmpeg", fps=144)
-    print(f"Saved gender balance plot to {save_path}")
+    print(f"Saved gender composition plot to {save_path}")
 
 def plot_school_diversity(all_stats, save_path):
     labels = ['Majority Exists', 'No Majority']
-    x = range(len(labels))
     width = 0.15
     offsets = [-2 * width, -width, 0, width, 2 * width]
 
@@ -205,12 +205,12 @@ def plot_school_diversity(all_stats, save_path):
         ax.set_ylim(0, 1200)
         ax.set_ylabel('Number of Teams')
         ax.set_title(f"Comparison of School Diversity in Teams (Majority >= 3) (Frame: {frame + 1}/1200)", fontsize=16)
-        ax.set_xticks(x)
+        ax.set_xticks(range(len(labels)))
         ax.set_xticklabels(labels)
         
         for i, (label, stats) in enumerate(zip(LABELS, all_stats)):
-            values = [stats['school_majorities'][frame], frame - stats['school_majorities'][frame]]
-            ax.bar([j + offsets[i] for j in x], values, width, label=label, color=PALETTE[label])
+            values = [stats['school_majorities'][frame], frame - stats['school_majorities'][frame]] # magik
+            ax.bar([j + offsets[i] for j in range(len(labels))], values, width, label=label, color=PALETTE[label])
 
     ani = FuncAnimation(fig, update, frames=1200, interval=50, repeat=True, blit=False)
     ani.save(save_path, writer="ffmpeg", fps=144)
@@ -228,7 +228,7 @@ plotplotplotplot
 
 def data_visualization(option):
     input_path = os.path.dirname(__file__) + f"/tmp"
-    FILES = {
+    CSV_FILES = {
         'Snake Draft': f"{input_path}/final_teams_snake_draft.csv",
         'Gender Priority': f"{input_path}/final_teams_gender_priority.csv",
         'Outlier Focused': f"{input_path}/final_teams_outlier_focused.csv",
@@ -236,19 +236,30 @@ def data_visualization(option):
         "Random": f"{input_path}/finals_teams_randomized.csv"
     }
     
-    all_data = {label: read_allocation_data(path) for label, path in FILES.items()}
+    TIME_FILES = {
+        'Snake Draft': f"{input_path}/snake_draft.txt",
+        'Gender Priority': f"{input_path}/gender_priority.txt",
+        'Outlier Focused': f"{input_path}/outlier_focused.txt",
+        'GPA Optimized': f"{input_path}/gpa_optimized.txt",
+    }
+    
+    # Plot the analyses of the result of each algorithms
+    all_data = {label: read_allocation_data(path) for label, path in CSV_FILES.items()}
 
-    if all(all_data.values()):
-        print("\n--- Analyzing All Allocations ---")
+    print("\n--- Analyzing All Allocations ---")
+    
+    all_teams = {label: group_data_by_team(data) for label, data in all_data.items()}
+    all_stats = [calculate_team_stats(all_teams[label]) for label in LABELS]
+
+    output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
+
+    plot_cgpa_distribution(all_stats, f"{output_path}/final_comparison_cgpa.mp4")
+    plot_gender_composition(all_stats, f"{output_path}/final_comparison_gender.mp4")
+    plot_school_diversity(all_stats, f"{output_path}/final_comparison_school.mp4")
+
+    # Plot the execution time of each algorithms
+    all_data = {label: read_execution_time(path) for label, path in TIME_FILES.items()} # reusing because why not
+
+    plot_execution_time(all_data, f"{output_path}/execution_time.png")
         
-        all_teams = {label: group_data_by_team(data) for label, data in all_data.items()}
-        all_stats = [calculate_team_stats(all_teams[label]) for label in LABELS]
-
-        output_path = os.path.dirname(__file__) + f"/analysis_plots_final/{option}"
-
-        plot_cgpa_distribution(all_stats, f"{output_path}/final_comparison_cgpa.mp4")
-        plot_gender_balance(all_stats, f"{output_path}/final_comparison_gender.mp4")
-        plot_school_diversity(all_stats, f"{output_path}/final_comparison_school.mp4")
-        plot_execution_time(option)
-            
-        print(f"\nAll final comparison plots have been saved in the '{output_path}' folder.")
+    print(f"\nAll final comparison plots have been saved in the '{output_path}' folder.")
