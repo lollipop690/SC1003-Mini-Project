@@ -1,5 +1,6 @@
 import os
 import csv
+import copy
 
 from algorithms.snakedraft import snakedraft
 from algorithms.genderpriority import genderpriority
@@ -125,11 +126,13 @@ for option, filename in FILES.items():
     tutorial_groups = students_by_tg(student_data)
 
     # Algorithms testing for a test case
-    write_analysis_data(snakedraft(tutorial_groups), "snake_draft")
-    write_analysis_data(genderpriority(tutorial_groups), "gender_priority")
-    write_analysis_data(outlierfocused(tutorial_groups), "outlier_focused")
-    write_analysis_data(GPAoptimized(tutorial_groups), "gpa_optimized")
-    randomized(tutorial_groups)
+    write_analysis_data(snakedraft(copy.deepcopy(tutorial_groups)), "snake_draft")
+    write_analysis_data(genderpriority(copy.deepcopy(tutorial_groups)), "gender_priority")
+    write_analysis_data(outlierfocused(copy.deepcopy(tutorial_groups)), "outlier_focused")
+    write_analysis_data(GPAoptimized(copy.deepcopy(tutorial_groups)), "gpa_optimized")
+
+    # Anomaly
+    write_output_csv(randomized(copy.deepcopy(tutorial_groups)), f"{os.path.dirname(__file__) + "/tmp"}/final_teams_randomized.csv")
 
     # Data visualization for a test case
     data_visualization(option)

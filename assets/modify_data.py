@@ -1,5 +1,6 @@
 import os
 import csv
+import copy
 import random
 import matplotlib.pyplot as plt
 
@@ -275,40 +276,38 @@ def plotGraph(tutorial_groups, out_path):
 # 4. MAIN
 # ==============================================================================
 
+def modify_data(tutorial_groups, cgpa, gender, school):
+    count = 1
+    student_list = []
+    for tg, students in tutorial_groups.items():
+        variation = count / 120
 
-"""
-- Read the datas contained in "records.csv" (The real data)
-- Separate the students by their Tutorial Groups
-"""
+        if (cgpa): tutorial_groups[tg] = modifyCGPA(students, variation)
+        if (gender): tutorial_groups[tg] = modifyGender(students, variation)
+        if (school): tutorial_groups[tg] = modifySchool(students, variation)
 
-records = read_student_data("records.csv")
-tutorial_groups = students_by_tg(records)
+        count += 1
 
-"""
-For each tutorial groups do:
-- Modify their CGPA, Gender, School based on the variation
-- Add them to "student_list" for writing into "records.modified.csv"
-"""
+        for student in students:
+            student_list.append(student)
 
-count = 1
-student_list = []
-for tg, students in tutorial_groups.items():
-    variation = count / 120
+    return student_list
 
-    tutorial_groups[tg] = modifyCGPA(students, variation)
-    tutorial_groups[tg] = modifyGender(students, variation)
-    tutorial_groups[tg] = modifySchool(students, variation)
+TEST_CASES = {
+    "NORMAL": {"cgpa": False, "gender": False, "school": False},
+    "CGPA": {"cgpa": True, "gender": False, "school": False},
+    "GENDER": {"cgpa": False, "gender": True, "school": False},
+    "SCHOOL": {"cgpa": False, "gender": False, "school": True},
+    "MIXED": {"cgpa": True, "gender": True, "school": True},
+}
 
-    count += 1
+student_data = read_student_data(os.path.dirname(__file__).replace("assets", "") + "/records.csv")
+tutorial_groups = students_by_tg(student_data)
 
-    for student in students:
-        student_list.append(student)
+for test, condition in TEST_CASES.items():
+    modified_data = modify_data(copy.deepcopy(tutorial_groups), condition["cgpa"], condition["gender"], condition["school"])
+    
+    write_output_csv(modified_data, os.path.dirname(__file__) +f"/analysis_plots_final/{test}/records_{test}.csv")
+    plotGraph(students_by_tg(modified_data), os.path.dirname(__file__) + f"/analysis_plots_final/{test}/{test}.png")
 
-"""
-After modifying the data, we do:
-- Write out the modified data (student_list) into "records.modified.csv"
-- Plot an analysis graph of the modified data
-"""
 
-write_output_csv(student_list, "records_modified.csv")
-plotGraph(tutorial_groups, os.path.join("Mixed.png"))

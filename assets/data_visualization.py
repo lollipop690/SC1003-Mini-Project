@@ -233,7 +233,7 @@ def data_visualization(option):
         'Gender Priority': f"{input_path}/final_teams_gender_priority.csv",
         'Outlier Focused': f"{input_path}/final_teams_outlier_focused.csv",
         'GPA Optimized': f"{input_path}/final_teams_gpa_optimized.csv",
-        "Random": f"{input_path}/finals_teams_randomized.csv"
+        "Random": f"{input_path}/final_teams_randomized.csv"
     }
     
     TIME_FILES = {

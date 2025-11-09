@@ -53,28 +53,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 1,
-      "ASE": 1,
-      "MAE": 4,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 8,
+      "EEE": 10,
       "NIE": 1,
-      "SSS": 5,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 10,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 5,
+      "CCEB": 1,
+      "MAE": 4,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 8,
       "SoH": 5,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 0,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -132,28 +132,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 6,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 3,
       "SPMS": 1,
-      "CoB (NBS)": 4,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 0,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 4,
+      "CCEB": 6,
+      "MAE": 3,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 3,
-      "MSE": 3
+      "CCDS": 7,
+      "CEE": 4,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 18,
-      "Female": 32
+      "Female": 32,
+      "Male": 18
     },
     "Count": 50
   },
@@ -211,28 +211,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 7,
-      "WKW SCI": 3,
       "SPMS": 2,
-      "CoB (NBS)": 5,
+      "EEE": 8,
       "NIE": 0,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 0,
-      "EEE": 8,
-      "CEE": 6,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 2,
+      "CCEB": 2,
+      "MAE": 7,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 5,
       "SoH": 3,
-      "MSE": 2
+      "CCDS": 6,
+      "CEE": 6,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -290,28 +290,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 2,
-      "CCEB": 7,
-      "ASE": 1,
-      "MAE": 4,
-      "WKW SCI": 2,
       "SPMS": 0,
-      "CoB (NBS)": 9,
+      "EEE": 6,
       "NIE": 0,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 7,
+      "MAE": 4,
+      "WKW SCI": 2,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 9,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 16,
-      "Female": 34
+      "Female": 34,
+      "Male": 16
     },
     "Count": 50
   },
@@ -369,28 +369,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 1,
-      "MAE": 2,
-      "WKW SCI": 2,
       "SPMS": 4,
-      "CoB (NBS)": 10,
+      "EEE": 8,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 8,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 3,
+      "CCEB": 3,
+      "MAE": 2,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 10,
       "SoH": 1,
-      "MSE": 3
+      "CCDS": 7,
+      "CEE": 0,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 18,
-      "Female": 32
+      "Female": 32,
+      "Male": 18
     },
     "Count": 50
   },
@@ -448,28 +448,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 8,
+      "EEE": 9,
       "NIE": 3,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 9,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 2,
+      "CCEB": 2,
+      "MAE": 1,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 6,
-      "MSE": 3
+      "CCDS": 5,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -527,28 +527,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 0,
-      "CCEB": 6,
-      "ASE": 0,
-      "MAE": 6,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 6,
+      "EEE": 9,
       "NIE": 3,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 0,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 9,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 2,
+      "CCEB": 6,
+      "MAE": 6,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 1
+      "CCDS": 4,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 27,
-      "Female": 23
+      "Female": 23,
+      "Male": 27
     },
     "Count": 50
   },
@@ -606,28 +606,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 2,
       "SPMS": 1,
-      "CoB (NBS)": 7,
+      "EEE": 8,
       "NIE": 0,
-      "SSS": 1,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 1,
-      "EEE": 8,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 1,
+      "CCEB": 4,
+      "MAE": 3,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 4,
-      "MSE": 2
+      "CCDS": 9,
+      "CEE": 3,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -685,28 +685,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 10,
+      "EEE": 10,
       "NIE": 5,
-      "SSS": 1,
+      "ASE": 1,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 1,
-      "EEE": 10,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 1,
+      "CCEB": 2,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 10,
       "SoH": 4,
-      "MSE": 2
+      "CCDS": 4,
+      "CEE": 2,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -764,28 +764,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 2,
-      "MAE": 11,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 4,
+      "EEE": 5,
       "NIE": 1,
-      "SSS": 1,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 5,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 1,
+      "CCEB": 3,
+      "MAE": 11,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 4,
       "SoH": 5,
-      "MSE": 1
+      "CCDS": 4,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -843,28 +843,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 10,
+      "EEE": 11,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 2,
-      "EEE": 11,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 2,
+      "MAE": 4,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 10,
       "SoH": 0,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -922,28 +922,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 4,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 6,
-      "EEE": 5,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 2,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 6,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 6
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -1001,28 +1001,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 2,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 5,
+      "EEE": 7,
       "NIE": 3,
-      "SSS": 5,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 7,
-      "CEE": 6,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 5,
+      "CCEB": 2,
+      "MAE": 2,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 5,
       "SoH": 6,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 6,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -1080,28 +1080,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 5,
-      "ASE": 3,
-      "MAE": 2,
-      "WKW SCI": 0,
       "SPMS": 4,
-      "CoB (NBS)": 6,
+      "EEE": 4,
       "NIE": 4,
-      "SSS": 6,
+      "ASE": 3,
       "CoE": 3,
       "ADM": 2,
-      "SBS": 2,
-      "EEE": 4,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 5,
+      "MAE": 2,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 0,
-      "MSE": 1
+      "CCDS": 4,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -1159,28 +1159,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 10,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 2,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 2,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 0,
-      "EEE": 6,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 4,
+      "CCEB": 3,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 2,
-      "MSE": 3
+      "CCDS": 10,
+      "CEE": 4,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 29,
-      "Female": 21
+      "Female": 21,
+      "Male": 29
     },
     "Count": 50
   },
@@ -1238,28 +1238,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 1,
-      "CCEB": 5,
-      "ASE": 2,
-      "MAE": 7,
-      "WKW SCI": 2,
       "SPMS": 1,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 2,
       "CoE": 0,
       "ADM": 1,
-      "SBS": 5,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 5,
+      "MAE": 7,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 3,
+      "CEE": 3,
+      "SBS": 5
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -1317,28 +1317,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 2,
-      "CCEB": 3,
-      "ASE": 2,
-      "MAE": 8,
-      "WKW SCI": 0,
       "SPMS": 4,
-      "CoB (NBS)": 5,
+      "EEE": 5,
       "NIE": 0,
-      "SSS": 6,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 5,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 3,
+      "MAE": 8,
+      "WKW SCI": 0,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 5,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 4,
+      "CEE": 2,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -1396,28 +1396,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 2,
-      "MAE": 6,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 9,
+      "EEE": 4,
       "NIE": 0,
-      "SSS": 5,
+      "ASE": 2,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 5,
+      "CCEB": 4,
+      "MAE": 6,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 9,
       "SoH": 2,
-      "MSE": 3
+      "CCDS": 3,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -1475,28 +1475,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 2,
-      "CCEB": 1,
-      "ASE": 1,
-      "MAE": 4,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 9,
+      "EEE": 7,
       "NIE": 2,
-      "SSS": 5,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 7,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 5,
+      "CCEB": 1,
+      "MAE": 4,
+      "WKW SCI": 0,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 9,
       "SoH": 1,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 2,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -1554,28 +1554,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 1,
-      "CCEB": 1,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 5,
-      "CoB (NBS)": 12,
+      "EEE": 10,
       "NIE": 0,
-      "SSS": 1,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 10,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 1,
+      "CCEB": 1,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 12,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 3,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -1633,28 +1633,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 3,
-      "MAE": 4,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 8,
+      "EEE": 1,
       "NIE": 0,
-      "SSS": 3,
+      "ASE": 3,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 5,
-      "EEE": 1,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 3,
+      "CCEB": 5,
+      "MAE": 4,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 8,
       "SoH": 0,
-      "MSE": 2
+      "CCDS": 9,
+      "CEE": 3,
+      "SBS": 5
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -1712,28 +1712,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 8,
+      "EEE": 13,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 13,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 3,
+      "CCEB": 3,
+      "MAE": 1,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 8,
       "SoH": 1,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -1791,28 +1791,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 10,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 5,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 4,
-      "EEE": 5,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 2,
+      "MAE": 5,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 10,
+      "CEE": 2,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -1870,28 +1870,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 7,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 0,
       "SPMS": 4,
-      "CoB (NBS)": 6,
+      "EEE": 8,
       "NIE": 1,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 4,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 8,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 2,
+      "CCEB": 7,
+      "MAE": 1,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 6,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 29,
-      "Female": 21
+      "Female": 21,
+      "Male": 29
     },
     "Count": 50
   },
@@ -1949,28 +1949,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 2,
-      "LKCMedicine": 0,
-      "CCEB": 1,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 2,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 6,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 1,
+      "MAE": 7,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 5,
-      "MSE": 0
+      "CCDS": 2,
+      "CEE": 6,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -2028,28 +2028,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 2,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 7,
-      "WKW SCI": 2,
       "SPMS": 1,
-      "CoB (NBS)": 3,
+      "EEE": 7,
       "NIE": 0,
-      "SSS": 1,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 7,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 1,
+      "CCEB": 3,
+      "MAE": 7,
+      "WKW SCI": 2,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 3,
       "SoH": 4,
-      "MSE": 2
+      "CCDS": 9,
+      "CEE": 2,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -2107,28 +2107,28 @@
       3.75
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 1,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 4,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 2,
+      "CCEB": 3,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 8,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -2186,28 +2186,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 1,
-      "LKCMedicine": 0,
-      "CCEB": 7,
-      "ASE": 1,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 13,
+      "EEE": 4,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 0,
-      "EEE": 4,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 7,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 13,
       "SoH": 6,
-      "MSE": 1
+      "CCDS": 1,
+      "CEE": 1,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -2265,28 +2265,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 2,
-      "CCEB": 0,
-      "ASE": 1,
-      "MAE": 2,
-      "WKW SCI": 3,
       "SPMS": 2,
-      "CoB (NBS)": 10,
+      "EEE": 8,
       "NIE": 2,
-      "SSS": 5,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 0,
-      "SBS": 6,
-      "EEE": 8,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 5,
+      "CCEB": 0,
+      "MAE": 2,
+      "WKW SCI": 3,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 10,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 3,
+      "CEE": 0,
+      "SBS": 6
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -2344,28 +2344,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 10,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 3,
+      "EEE": 4,
       "NIE": 2,
-      "SSS": 6,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 2,
+      "MAE": 10,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 3,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 2,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -2423,28 +2423,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 2,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 11,
+      "EEE": 8,
       "NIE": 2,
-      "SSS": 0,
+      "ASE": 2,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 6,
-      "EEE": 8,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 0,
+      "CCEB": 3,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 11,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 2,
+      "SBS": 6
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -2502,28 +2502,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 2,
-      "LKCMedicine": 2,
-      "CCEB": 6,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 5,
-      "CoB (NBS)": 8,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 5,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 1,
-      "EEE": 6,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 5,
+      "CCEB": 6,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 8,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 2,
+      "CEE": 4,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -2581,28 +2581,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 2,
-      "WKW SCI": 2,
       "SPMS": 1,
-      "CoB (NBS)": 9,
+      "EEE": 5,
       "NIE": 4,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 0,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 2,
+      "CCEB": 4,
+      "MAE": 2,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 9,
       "SoH": 4,
-      "MSE": 2
+      "CCDS": 6,
+      "CEE": 4,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -2660,28 +2660,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 2,
-      "MAE": 1,
-      "WKW SCI": 2,
       "SPMS": 5,
-      "CoB (NBS)": 4,
+      "EEE": 6,
       "NIE": 4,
-      "SSS": 3,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 3,
+      "CCEB": 5,
+      "MAE": 1,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 1,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -2739,28 +2739,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 1,
-      "CoB (NBS)": 3,
+      "EEE": 10,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 4,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 10,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 2,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 3,
       "SoH": 4,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 2,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -2818,28 +2818,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 6,
-      "CoB (NBS)": 5,
+      "EEE": 7,
       "NIE": 3,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 7,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 2,
+      "CCEB": 5,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 5,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 29,
-      "Female": 21
+      "Female": 21,
+      "Male": 29
     },
     "Count": 50
   },
@@ -2897,28 +2897,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 2,
-      "CCEB": 6,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 11,
+      "EEE": 5,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 4,
-      "EEE": 5,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 4,
+      "CCEB": 6,
+      "MAE": 7,
+      "WKW SCI": 1,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 11,
       "SoH": 0,
-      "MSE": 2
+      "CCDS": 3,
+      "CEE": 1,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -2976,28 +2976,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 0,
-      "CCEB": 6,
-      "ASE": 1,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 9,
+      "EEE": 2,
       "NIE": 4,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 3,
-      "SBS": 3,
-      "EEE": 2,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 2,
+      "CCEB": 6,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 9,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 9,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -3055,28 +3055,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 2,
-      "CCEB": 5,
-      "ASE": 3,
-      "MAE": 4,
-      "WKW SCI": 2,
       "SPMS": 1,
-      "CoB (NBS)": 8,
+      "EEE": 4,
       "NIE": 2,
-      "SSS": 6,
+      "ASE": 3,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 4,
-      "EEE": 4,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 6,
+      "CCEB": 5,
+      "MAE": 4,
+      "WKW SCI": 2,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 8,
       "SoH": 1,
-      "MSE": 0
+      "CCDS": 3,
+      "CEE": 2,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 18,
-      "Female": 32
+      "Female": 32,
+      "Male": 18
     },
     "Count": 50
   },
@@ -3134,28 +3134,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 6,
+      "EEE": 5,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 5,
-      "CEE": 6,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 3,
+      "CCEB": 2,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 5,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 6,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -3213,28 +3213,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 2,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 6,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 0,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 2,
+      "CCEB": 2,
+      "MAE": 6,
+      "WKW SCI": 0,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 7,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 5,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -3292,28 +3292,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 10,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 3,
+      "EEE": 9,
       "NIE": 1,
-      "SSS": 5,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 1,
-      "EEE": 9,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 4,
+      "SSS": 5,
+      "CCEB": 3,
+      "MAE": 3,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 3,
       "SoH": 3,
-      "MSE": 4
+      "CCDS": 10,
+      "CEE": 0,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -3371,28 +3371,28 @@
       3.89
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 1,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 6,
+      "EEE": 4,
       "NIE": 2,
-      "SSS": 1,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 2,
-      "SBS": 1,
-      "EEE": 4,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 1,
+      "CCEB": 3,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 3,
-      "MSE": 3
+      "CCDS": 8,
+      "CEE": 3,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 27,
-      "Female": 23
+      "Female": 23,
+      "Male": 27
     },
     "Count": 50
   },
@@ -3450,28 +3450,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 9,
       "NIE": 0,
-      "SSS": 1,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 3,
-      "SBS": 5,
-      "EEE": 9,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 1,
+      "CCEB": 2,
+      "MAE": 7,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 5,
+      "CEE": 0,
+      "SBS": 5
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -3529,28 +3529,28 @@
       3.7
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 2,
-      "CCEB": 5,
-      "ASE": 2,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 4,
-      "CoB (NBS)": 11,
+      "EEE": 5,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 2,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 5,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 5,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 11,
       "SoH": 1,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -3608,28 +3608,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 8,
+      "EEE": 4,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 3,
-      "SBS": 5,
-      "EEE": 4,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 4,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 4,
+      "SBS": 5
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -3687,28 +3687,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 2,
-      "MAE": 6,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 4,
+      "EEE": 5,
       "NIE": 1,
-      "SSS": 5,
+      "ASE": 2,
       "CoE": 5,
       "ADM": 2,
-      "SBS": 2,
-      "EEE": 5,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 5,
+      "CCEB": 4,
+      "MAE": 6,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -3766,28 +3766,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 2,
-      "CCEB": 7,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 0,
       "SPMS": 0,
-      "CoB (NBS)": 10,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 0,
       "ADM": 2,
-      "SBS": 2,
-      "EEE": 5,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 2,
+      "CCEB": 7,
+      "MAE": 7,
+      "WKW SCI": 0,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 10,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 5,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -3845,28 +3845,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 0,
-      "CoB (NBS)": 10,
+      "EEE": 7,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 7,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 2,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 10,
       "SoH": 1,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 4,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -3924,28 +3924,28 @@
       3.75
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 2,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 1,
       "SPMS": 0,
-      "CoB (NBS)": 4,
+      "EEE": 9,
       "NIE": 3,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 0,
       "ADM": 1,
-      "SBS": 0,
-      "EEE": 9,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 3,
+      "MAE": 1,
+      "WKW SCI": 1,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 4,
       "SoH": 7,
-      "MSE": 1
+      "CCDS": 9,
+      "CEE": 5,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 27,
-      "Female": 23
+      "Female": 23,
+      "Male": 27
     },
     "Count": 50
   },
@@ -4003,28 +4003,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 8,
-      "ASE": 1,
-      "MAE": 2,
-      "WKW SCI": 1,
       "SPMS": 0,
-      "CoB (NBS)": 7,
+      "EEE": 11,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 11,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 4,
+      "CCEB": 8,
+      "MAE": 2,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 4,
-      "MSE": 2
+      "CCDS": 3,
+      "CEE": 3,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -4082,28 +4082,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 3,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 4,
+      "EEE": 8,
       "NIE": 2,
-      "SSS": 1,
+      "ASE": 3,
       "CoE": 4,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 1,
+      "CCEB": 5,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 2,
-      "MSE": 3
+      "CCDS": 4,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -4161,28 +4161,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 11,
-      "LKCMedicine": 2,
-      "CCEB": 6,
-      "ASE": 1,
-      "MAE": 1,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 6,
+      "EEE": 7,
       "NIE": 2,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 7,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 2,
+      "CCEB": 6,
+      "MAE": 1,
+      "WKW SCI": 1,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 6,
       "SoH": 1,
-      "MSE": 3
+      "CCDS": 11,
+      "CEE": 2,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -4240,28 +4240,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 11,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 8,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 4,
+      "MAE": 1,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 11,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -4319,28 +4319,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 5,
+      "EEE": 13,
       "NIE": 0,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 13,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 2,
+      "CCEB": 2,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 5,
       "SoH": 6,
-      "MSE": 1
+      "CCDS": 3,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 28,
-      "Female": 22
+      "Female": 22,
+      "Male": 28
     },
     "Count": 50
   },
@@ -4398,28 +4398,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 2,
-      "LKCMedicine": 1,
-      "CCEB": 5,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 4,
-      "CoB (NBS)": 8,
+      "EEE": 7,
       "NIE": 1,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 3,
-      "SBS": 2,
-      "EEE": 7,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 2,
+      "CCEB": 5,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 2,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -4477,28 +4477,28 @@
       3.89
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 7,
-      "ASE": 1,
-      "MAE": 9,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 3,
+      "EEE": 8,
       "NIE": 3,
-      "SSS": 1,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 1,
+      "CCEB": 7,
+      "MAE": 9,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 3,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -4556,28 +4556,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 8,
+      "EEE": 10,
       "NIE": 0,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 4,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 10,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 3,
+      "CCEB": 4,
+      "MAE": 3,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 8,
       "SoH": 3,
-      "MSE": 2
+      "CCDS": 4,
+      "CEE": 5,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -4635,28 +4635,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 13,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 3,
+      "CCEB": 3,
+      "MAE": 4,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 13,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 5,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -4714,28 +4714,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 2,
       "SPMS": 5,
-      "CoB (NBS)": 9,
+      "EEE": 4,
       "NIE": 4,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 4,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 2,
+      "MAE": 4,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 9,
       "SoH": 4,
-      "MSE": 1
+      "CCDS": 4,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -4793,28 +4793,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 6,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 3,
+      "MAE": 6,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -4872,28 +4872,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 1,
-      "MAE": 2,
-      "WKW SCI": 2,
       "SPMS": 4,
-      "CoB (NBS)": 8,
+      "EEE": 8,
       "NIE": 0,
-      "SSS": 2,
+      "ASE": 1,
       "CoE": 0,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 2,
+      "CCEB": 3,
+      "MAE": 2,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 3,
-      "MSE": 2
+      "CCDS": 9,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -4951,28 +4951,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 3,
       "SPMS": 3,
-      "CoB (NBS)": 3,
+      "EEE": 4,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 4,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 4,
+      "MAE": 7,
+      "WKW SCI": 3,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 3,
       "SoH": 4,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -5030,28 +5030,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 3,
       "SPMS": 3,
-      "CoB (NBS)": 6,
+      "EEE": 10,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 10,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 3,
+      "CCEB": 4,
+      "MAE": 4,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 4,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -5109,28 +5109,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 3,
-      "CCEB": 5,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 5,
+      "EEE": 4,
       "NIE": 3,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 4,
-      "EEE": 4,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 5,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 3,
+      "CoB (NBS)": 5,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 1,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -5188,28 +5188,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 2,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 2,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 4,
-      "CoB (NBS)": 10,
+      "EEE": 6,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 2,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 3,
+      "CCEB": 2,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 10,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 2,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -5267,28 +5267,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 3,
-      "MAE": 2,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 8,
+      "EEE": 4,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 3,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 2,
+      "MAE": 2,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -5346,28 +5346,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 1,
-      "CCEB": 1,
-      "ASE": 0,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 10,
       "NIE": 2,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 7,
-      "EEE": 10,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 1,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 0,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 0,
+      "SBS": 7
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -5425,28 +5425,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 7,
+      "EEE": 7,
       "NIE": 0,
-      "SSS": 5,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 2,
-      "SBS": 4,
-      "EEE": 7,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 5,
+      "CCEB": 3,
+      "MAE": 3,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 5,
-      "MSE": 2
+      "CCDS": 3,
+      "CEE": 2,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -5504,28 +5504,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 0,
       "SPMS": 0,
-      "CoB (NBS)": 6,
+      "EEE": 4,
       "NIE": 6,
-      "SSS": 6,
+      "ASE": 0,
       "CoE": 4,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 4,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 4,
+      "SSS": 6,
+      "CCEB": 4,
+      "MAE": 1,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 4
+      "CCDS": 5,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 18,
-      "Female": 32
+      "Female": 32,
+      "Male": 18
     },
     "Count": 50
   },
@@ -5583,28 +5583,28 @@
       3.84
     ],
     "Schools": {
-      "CCDS": 1,
-      "LKCMedicine": 1,
-      "CCEB": 5,
-      "ASE": 1,
-      "MAE": 4,
-      "WKW SCI": 3,
       "SPMS": 3,
-      "CoB (NBS)": 9,
+      "EEE": 8,
       "NIE": 3,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 5,
+      "MAE": 4,
+      "WKW SCI": 3,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 9,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 1,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -5662,28 +5662,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 6,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 3,
+      "EEE": 6,
       "NIE": 2,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 4,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 2,
+      "CCEB": 6,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 3,
       "SoH": 4,
-      "MSE": 2
+      "CCDS": 7,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 28,
-      "Female": 22
+      "Female": 22,
+      "Male": 28
     },
     "Count": 50
   },
@@ -5741,28 +5741,28 @@
       3.89
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 9,
+      "EEE": 7,
       "NIE": 0,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 4,
       "ADM": 1,
-      "SBS": 4,
-      "EEE": 7,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 2,
+      "CCEB": 4,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 9,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -5820,28 +5820,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 2,
       "SPMS": 5,
-      "CoB (NBS)": 7,
+      "EEE": 4,
       "NIE": 1,
-      "SSS": 6,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 6,
+      "CCEB": 3,
+      "MAE": 5,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 5,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -5899,28 +5899,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 4,
+      "EEE": 5,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 5,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 4,
+      "SSS": 4,
+      "CCEB": 4,
+      "MAE": 7,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 3,
-      "MSE": 4
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -5978,28 +5978,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 7,
+      "EEE": 9,
       "NIE": 4,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 9,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 2,
+      "CCEB": 3,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 4,
+      "CEE": 5,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -6057,28 +6057,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 3,
       "SPMS": 6,
-      "CoB (NBS)": 6,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 6,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 5,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 3,
+      "MAE": 4,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 1,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 3,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -6136,28 +6136,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 2,
-      "MAE": 1,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 1,
+      "ASE": 2,
       "CoE": 2,
       "ADM": 3,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 1,
+      "CCEB": 4,
+      "MAE": 1,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 4,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 2,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -6215,28 +6215,28 @@
       3.89
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 2,
-      "CCEB": 4,
-      "ASE": 2,
-      "MAE": 5,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 3,
+      "EEE": 4,
       "NIE": 2,
-      "SSS": 5,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 4,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 5,
+      "CCEB": 4,
+      "MAE": 5,
+      "WKW SCI": 0,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 3,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 4,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -6294,28 +6294,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 1,
-      "ASE": 0,
-      "MAE": 2,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 5,
       "NIE": 4,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 6,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 1,
+      "MAE": 2,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 4,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 28,
-      "Female": 22
+      "Female": 22,
+      "Male": 28
     },
     "Count": 50
   },
@@ -6373,28 +6373,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 2,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 1,
+      "EEE": 8,
       "NIE": 1,
-      "SSS": 5,
+      "ASE": 2,
       "CoE": 5,
       "ADM": 2,
-      "SBS": 1,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 5,
+      "CCEB": 5,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 1,
       "SoH": 5,
-      "MSE": 0
+      "CCDS": 5,
+      "CEE": 1,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -6452,28 +6452,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 2,
-      "LKCMedicine": 1,
-      "CCEB": 6,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 8,
       "NIE": 2,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 8,
-      "CEE": 6,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 2,
+      "CCEB": 6,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 2,
-      "MSE": 3
+      "CCDS": 2,
+      "CEE": 6,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 29,
-      "Female": 21
+      "Female": 21,
+      "Male": 29
     },
     "Count": 50
   },
@@ -6531,28 +6531,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 3,
+      "EEE": 10,
       "NIE": 4,
-      "SSS": 1,
+      "ASE": 0,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 7,
-      "EEE": 10,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 5,
+      "SSS": 1,
+      "CCEB": 2,
+      "MAE": 3,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 3,
       "SoH": 4,
-      "MSE": 5
+      "CCDS": 5,
+      "CEE": 1,
+      "SBS": 7
     },
     "Genders": {
-      "Male": 30,
-      "Female": 20
+      "Female": 20,
+      "Male": 30
     },
     "Count": 50
   },
@@ -6610,28 +6610,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 6,
-      "ASE": 2,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 7,
+      "EEE": 4,
       "NIE": 3,
-      "SSS": 4,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 6,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 1,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -6689,28 +6689,28 @@
       3.92
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 1,
-      "CCEB": 6,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 4,
+      "EEE": 9,
       "NIE": 3,
-      "SSS": 5,
+      "ASE": 0,
       "CoE": 0,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 9,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 5,
+      "CCEB": 6,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 4,
       "SoH": 1,
-      "MSE": 1
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -6768,28 +6768,28 @@
       3.89
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 2,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 5,
       "SPMS": 0,
-      "CoB (NBS)": 11,
+      "EEE": 9,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 9,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 4,
+      "CCEB": 3,
+      "MAE": 3,
+      "WKW SCI": 5,
+      "LKCMedicine": 2,
+      "CoB (NBS)": 11,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 3,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -6847,28 +6847,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 2,
-      "MAE": 2,
-      "WKW SCI": 0,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 2,
       "NIE": 1,
-      "SSS": 7,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 2,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 7,
+      "CCEB": 2,
+      "MAE": 2,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 4,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -6926,28 +6926,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 6,
-      "ASE": 0,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 7,
+      "EEE": 8,
       "NIE": 1,
-      "SSS": 1,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 8,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 1,
+      "CCEB": 6,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 5,
-      "MSE": 2
+      "CCDS": 4,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 27,
-      "Female": 23
+      "Female": 23,
+      "Male": 27
     },
     "Count": 50
   },
@@ -7005,28 +7005,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 5,
+      "EEE": 6,
       "NIE": 2,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 3,
-      "SBS": 7,
-      "EEE": 6,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 5,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 5,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 5,
+      "CEE": 2,
+      "SBS": 7
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -7084,28 +7084,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 9,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 1,
-      "MAE": 1,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 6,
       "NIE": 0,
-      "SSS": 6,
+      "ASE": 1,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 4,
+      "SSS": 6,
+      "CCEB": 5,
+      "MAE": 1,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 4,
-      "MSE": 4
+      "CCDS": 9,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -7163,28 +7163,28 @@
       3.82
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 10,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 7,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 5,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 2,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 10,
       "SoH": 2,
-      "MSE": 0
+      "CCDS": 5,
+      "CEE": 5,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -7242,28 +7242,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 0,
-      "MAE": 2,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 9,
+      "EEE": 6,
       "NIE": 5,
-      "SSS": 2,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 2,
+      "CCEB": 5,
+      "MAE": 2,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 9,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -7321,28 +7321,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 1,
-      "CCEB": 5,
-      "ASE": 0,
-      "MAE": 2,
-      "WKW SCI": 0,
       "SPMS": 0,
-      "CoB (NBS)": 9,
+      "EEE": 7,
       "NIE": 3,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 3,
-      "SBS": 2,
-      "EEE": 7,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 5,
+      "MAE": 2,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 9,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -7400,28 +7400,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 1,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 4,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 1,
       "CoE": 4,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 4,
+      "CCEB": 4,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 7,
       "SoH": 2,
-      "MSE": 2
+      "CCDS": 1,
+      "CEE": 5,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -7479,28 +7479,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 3,
       "SPMS": 0,
-      "CoB (NBS)": 4,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 6,
+      "ASE": 1,
       "CoE": 6,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 5,
+      "MAE": 3,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 5,
-      "MSE": 1
+      "CCDS": 3,
+      "CEE": 4,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 30,
-      "Female": 20
+      "Female": 20,
+      "Male": 30
     },
     "Count": 50
   },
@@ -7558,28 +7558,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 3,
-      "CCEB": 5,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 0,
-      "CoB (NBS)": 9,
+      "EEE": 10,
       "NIE": 0,
-      "SSS": 3,
+      "ASE": 0,
       "CoE": 0,
       "ADM": 0,
-      "SBS": 5,
-      "EEE": 10,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 3,
+      "CCEB": 5,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 3,
+      "CoB (NBS)": 9,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 7,
+      "CEE": 1,
+      "SBS": 5
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -7637,28 +7637,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 7,
-      "ASE": 1,
-      "MAE": 1,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 7,
+      "EEE": 5,
       "NIE": 0,
-      "SSS": 6,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 2,
-      "SBS": 5,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 6,
+      "CCEB": 7,
+      "MAE": 1,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 0,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 4,
+      "SBS": 5
     },
     "Genders": {
-      "Male": 16,
-      "Female": 34
+      "Female": 34,
+      "Male": 16
     },
     "Count": 50
   },
@@ -7716,28 +7716,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 12,
-      "LKCMedicine": 0,
-      "CCEB": 1,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 4,
+      "EEE": 8,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 2,
-      "SBS": 2,
-      "EEE": 8,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 3,
+      "CCEB": 1,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 3,
-      "MSE": 2
+      "CCDS": 12,
+      "CEE": 3,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 29,
-      "Female": 21
+      "Female": 21,
+      "Male": 29
     },
     "Count": 50
   },
@@ -7795,28 +7795,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 3,
       "SPMS": 2,
-      "CoB (NBS)": 4,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 7,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 0,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 7,
+      "CCEB": 5,
+      "MAE": 3,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 3,
-      "MSE": 2
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 21,
-      "Female": 29
+      "Female": 29,
+      "Male": 21
     },
     "Count": 50
   },
@@ -7874,28 +7874,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 3,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 8,
+      "EEE": 8,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 8,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 3,
+      "CCEB": 4,
+      "MAE": 3,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 2,
-      "MSE": 2
+      "CCDS": 4,
+      "CEE": 2,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -7953,28 +7953,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 5,
-      "ASE": 2,
-      "MAE": 7,
-      "WKW SCI": 0,
       "SPMS": 6,
-      "CoB (NBS)": 5,
+      "EEE": 3,
       "NIE": 3,
-      "SSS": 2,
+      "ASE": 2,
       "CoE": 4,
       "ADM": 1,
-      "SBS": 3,
-      "EEE": 3,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 2,
+      "CCEB": 5,
+      "MAE": 7,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 5,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 0,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -8032,28 +8032,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 6,
-      "WKW SCI": 2,
       "SPMS": 2,
-      "CoB (NBS)": 3,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 6,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 4,
-      "EEE": 5,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 6,
+      "CCEB": 3,
+      "MAE": 6,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 3,
       "SoH": 3,
-      "MSE": 3
+      "CCDS": 5,
+      "CEE": 2,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -8111,28 +8111,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 1,
-      "CCEB": 2,
-      "ASE": 2,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 5,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 4,
+      "ASE": 2,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 6,
-      "CEE": 7,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 4,
+      "CCEB": 2,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 5,
       "SoH": 4,
-      "MSE": 3
+      "CCDS": 5,
+      "CEE": 7,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -8190,28 +8190,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 2,
-      "MAE": 4,
-      "WKW SCI": 3,
       "SPMS": 2,
-      "CoB (NBS)": 5,
+      "EEE": 5,
       "NIE": 4,
-      "SSS": 5,
+      "ASE": 2,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 5,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 5,
+      "CCEB": 3,
+      "MAE": 4,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 5,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 8,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -8269,28 +8269,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 1,
-      "MAE": 6,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 7,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 6,
+      "ASE": 1,
       "CoE": 1,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 2,
+      "MAE": 6,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 7,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -8348,28 +8348,28 @@
       3.88
     ],
     "Schools": {
-      "CCDS": 4,
-      "LKCMedicine": 1,
-      "CCEB": 9,
-      "ASE": 0,
-      "MAE": 8,
-      "WKW SCI": 2,
       "SPMS": 4,
-      "CoB (NBS)": 3,
+      "EEE": 9,
       "NIE": 2,
-      "SSS": 1,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 0,
-      "EEE": 9,
-      "CEE": 0,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 1,
+      "CCEB": 9,
+      "MAE": 8,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 3,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 4,
+      "CEE": 0,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 24,
-      "Female": 26
+      "Female": 26,
+      "Male": 24
     },
     "Count": 50
   },
@@ -8427,28 +8427,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 5,
-      "LKCMedicine": 0,
-      "CCEB": 6,
-      "ASE": 2,
-      "MAE": 5,
-      "WKW SCI": 3,
       "SPMS": 5,
-      "CoB (NBS)": 4,
+      "EEE": 7,
       "NIE": 2,
-      "SSS": 3,
+      "ASE": 2,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 7,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 6,
+      "MAE": 5,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 0,
-      "MSE": 1
+      "CCDS": 5,
+      "CEE": 4,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 19,
-      "Female": 31
+      "Female": 31,
+      "Male": 19
     },
     "Count": 50
   },
@@ -8506,28 +8506,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 2,
       "SPMS": 1,
-      "CoB (NBS)": 4,
+      "EEE": 7,
       "NIE": 1,
-      "SSS": 6,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 2,
-      "EEE": 7,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 6,
+      "CCEB": 4,
+      "MAE": 3,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 5,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 25,
-      "Female": 25
+      "Female": 25,
+      "Male": 25
     },
     "Count": 50
   },
@@ -8585,28 +8585,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 0,
-      "CCEB": 9,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 8,
+      "EEE": 11,
       "NIE": 2,
-      "SSS": 1,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 0,
-      "SBS": 1,
-      "EEE": 11,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 1,
+      "CCEB": 9,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 8,
       "SoH": 1,
-      "MSE": 2
+      "CCDS": 6,
+      "CEE": 2,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -8664,28 +8664,28 @@
       3.87
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 1,
-      "CCEB": 3,
-      "ASE": 1,
-      "MAE": 5,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 6,
+      "EEE": 4,
       "NIE": 3,
-      "SSS": 5,
+      "ASE": 1,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 3,
-      "EEE": 4,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 5,
+      "CCEB": 3,
+      "MAE": 5,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 6,
       "SoH": 1,
-      "MSE": 3
+      "CCDS": 6,
+      "CEE": 4,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -8743,28 +8743,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 2,
-      "ASE": 2,
-      "MAE": 6,
-      "WKW SCI": 2,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 7,
       "NIE": 2,
-      "SSS": 5,
+      "ASE": 2,
       "CoE": 1,
       "ADM": 3,
-      "SBS": 1,
-      "EEE": 7,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 0,
+      "SSS": 5,
+      "CCEB": 2,
+      "MAE": 6,
+      "WKW SCI": 2,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 3,
-      "MSE": 0
+      "CCDS": 3,
+      "CEE": 3,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 27,
-      "Female": 23
+      "Female": 23,
+      "Male": 27
     },
     "Count": 50
   },
@@ -8822,28 +8822,28 @@
       3.86
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 0,
       "SPMS": 1,
-      "CoB (NBS)": 2,
+      "EEE": 7,
       "NIE": 1,
-      "SSS": 3,
+      "ASE": 1,
       "CoE": 6,
       "ADM": 2,
-      "SBS": 3,
-      "EEE": 7,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 4,
+      "MAE": 7,
+      "WKW SCI": 0,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 2,
       "SoH": 2,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 1,
+      "SBS": 3
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -8901,28 +8901,28 @@
       3.78
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 1,
       "SPMS": 3,
-      "CoB (NBS)": 7,
+      "EEE": 6,
       "NIE": 1,
-      "SSS": 8,
+      "ASE": 0,
       "CoE": 1,
       "ADM": 2,
-      "SBS": 0,
-      "EEE": 6,
-      "CEE": 3,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 8,
+      "CCEB": 3,
+      "MAE": 1,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 7,
       "SoH": 5,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 3,
+      "SBS": 0
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -8980,28 +8980,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 6,
-      "ASE": 2,
-      "MAE": 7,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 5,
+      "EEE": 5,
       "NIE": 2,
-      "SSS": 2,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 3,
-      "SBS": 1,
-      "EEE": 5,
-      "CEE": 2,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 2,
+      "CCEB": 6,
+      "MAE": 7,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 5,
       "SoH": 0,
-      "MSE": 3
+      "CCDS": 7,
+      "CEE": 2,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 17,
-      "Female": 33
+      "Female": 33,
+      "Male": 17
     },
     "Count": 50
   },
@@ -9059,28 +9059,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 2,
-      "MAE": 6,
-      "WKW SCI": 3,
       "SPMS": 2,
-      "CoB (NBS)": 10,
+      "EEE": 6,
       "NIE": 0,
-      "SSS": 3,
+      "ASE": 2,
       "CoE": 3,
       "ADM": 0,
-      "SBS": 2,
-      "EEE": 6,
-      "CEE": 1,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 3,
+      "CCEB": 5,
+      "MAE": 6,
+      "WKW SCI": 3,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 10,
       "SoH": 3,
-      "MSE": 1
+      "CCDS": 3,
+      "CEE": 1,
+      "SBS": 2
     },
     "Genders": {
-      "Male": 23,
-      "Female": 27
+      "Female": 27,
+      "Male": 23
     },
     "Count": 50
   },
@@ -9138,28 +9138,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 7,
-      "LKCMedicine": 0,
-      "CCEB": 3,
-      "ASE": 0,
-      "MAE": 8,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 4,
+      "EEE": 6,
       "NIE": 2,
-      "SSS": 5,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 6,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 3,
+      "SSS": 5,
+      "CCEB": 3,
+      "MAE": 8,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 4,
       "SoH": 1,
-      "MSE": 3
+      "CCDS": 7,
+      "CEE": 5,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 26,
-      "Female": 24
+      "Female": 24,
+      "Male": 26
     },
     "Count": 50
   },
@@ -9217,28 +9217,28 @@
       3.8
     ],
     "Schools": {
-      "CCDS": 10,
-      "LKCMedicine": 0,
-      "CCEB": 5,
-      "ASE": 0,
-      "MAE": 1,
-      "WKW SCI": 0,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 3,
       "NIE": 4,
-      "SSS": 7,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 3,
-      "CEE": 5,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 7,
+      "CCEB": 5,
+      "MAE": 1,
+      "WKW SCI": 0,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 0,
-      "MSE": 2
+      "CCDS": 10,
+      "CEE": 5,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 20,
-      "Female": 30
+      "Female": 30,
+      "Male": 20
     },
     "Count": 50
   },
@@ -9296,28 +9296,28 @@
       3.85
     ],
     "Schools": {
-      "CCDS": 6,
-      "LKCMedicine": 1,
-      "CCEB": 4,
-      "ASE": 0,
-      "MAE": 3,
-      "WKW SCI": 1,
       "SPMS": 1,
-      "CoB (NBS)": 5,
+      "EEE": 10,
       "NIE": 0,
-      "SSS": 4,
+      "ASE": 0,
       "CoE": 2,
       "ADM": 1,
-      "SBS": 4,
-      "EEE": 10,
-      "CEE": 3,
       "HASS": 1,
+      "MSE": 0,
+      "SSS": 4,
+      "CCEB": 4,
+      "MAE": 3,
+      "WKW SCI": 1,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 5,
       "SoH": 4,
-      "MSE": 0
+      "CCDS": 6,
+      "CEE": 3,
+      "SBS": 4
     },
     "Genders": {
-      "Male": 29,
-      "Female": 21
+      "Female": 21,
+      "Male": 29
     },
     "Count": 50
   },
@@ -9375,28 +9375,28 @@
       3.82
     ],
     "Schools": {
-      "CCDS": 3,
-      "LKCMedicine": 0,
-      "CCEB": 1,
-      "ASE": 0,
-      "MAE": 4,
-      "WKW SCI": 1,
       "SPMS": 2,
-      "CoB (NBS)": 6,
+      "EEE": 7,
       "NIE": 4,
-      "SSS": 5,
+      "ASE": 0,
       "CoE": 3,
       "ADM": 1,
-      "SBS": 1,
-      "EEE": 7,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 2,
+      "SSS": 5,
+      "CCEB": 1,
+      "MAE": 4,
+      "WKW SCI": 1,
+      "LKCMedicine": 0,
+      "CoB (NBS)": 6,
       "SoH": 6,
-      "MSE": 2
+      "CCDS": 3,
+      "CEE": 4,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 22,
-      "Female": 28
+      "Female": 28,
+      "Male": 22
     },
     "Count": 50
   },
@@ -9454,28 +9454,28 @@
       3.9
     ],
     "Schools": {
-      "CCDS": 8,
-      "LKCMedicine": 1,
-      "CCEB": 7,
-      "ASE": 1,
-      "MAE": 7,
-      "WKW SCI": 2,
       "SPMS": 0,
-      "CoB (NBS)": 8,
+      "EEE": 5,
       "NIE": 1,
-      "SSS": 1,
+      "ASE": 1,
       "CoE": 2,
       "ADM": 0,
-      "SBS": 1,
-      "EEE": 5,
-      "CEE": 4,
       "HASS": 0,
+      "MSE": 1,
+      "SSS": 1,
+      "CCEB": 7,
+      "MAE": 7,
+      "WKW SCI": 2,
+      "LKCMedicine": 1,
+      "CoB (NBS)": 8,
       "SoH": 1,
-      "MSE": 1
+      "CCDS": 8,
+      "CEE": 4,
+      "SBS": 1
     },
     "Genders": {
-      "Male": 27,
-      "Female": 23
+      "Female": 23,
+      "Male": 27
     },
     "Count": 50
   }
