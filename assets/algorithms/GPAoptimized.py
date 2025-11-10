@@ -1,24 +1,29 @@
 import time
 
-def snake_draft(students_in_tg, num_teams=10): #this function creates a WIP grouping for an individual tg based solely on gpa in a snake draft format
-    students_sorted = sorted(students_in_tg, key=lambda s: s['CGPA'], reverse=True) #essentially, this lambda function will pull every student in order of their cgpa from lowest to highest, which is then reversed. note that a lambda function is just a function as a key in a dict
-    teams = [[] for tm in range(num_teams)] # generates an empty list for each team
+def snake_draft(students_sorted,num_teams=10):#this function creates a WIP grouping for an individual tg based solely on gpa in a snake draft format
+    def _draft(students_sorted, num_teams=10): 
+        teams = [[] for tm in range(num_teams)] # generates an empty list for each team
     
-    current_team_index = 0
-    direction = 1
+        current_team_index = 0
+        direction = 1
 
-    for student in students_sorted:
-        teams[current_team_index].append(student) #adds the student at current index to the current group(ungrouped student with the lowest index-highest gpa)
-        current_team_index += direction
+        for student in students_sorted:
+            teams[current_team_index].append(student) #adds the student at current index to the current group(ungrouped student with the lowest index-highest gpa)
+            current_team_index += direction
 
-        if current_team_index == num_teams: #block to reverse direction, creating the snake draft
-            direction = -1
-            current_team_index = num_teams - 1
-        elif current_team_index == -1:
-            direction = 1
-            current_team_index = 0
+            if current_team_index == num_teams: #block to reverse direction, creating the snake draft
+                direction = -1
+                current_team_index = num_teams - 1
+            elif current_team_index == -1:
+                direction = 1
+                current_team_index = 0
             
-    return teams
+        return teams
+    
+    if isinstance(students_sorted,dict):
+        return {tg: _draft(students ,num_teams) for tg,students in students_sorted.items()}
+    else:   
+        return _draft(students_sorted, num_teams)
 
 def diversity_score(team): #grades how diverse each group is(lower better)
     score = 0
@@ -49,49 +54,49 @@ def total_cgpa_variance(teams):
     variance = sum((avg - overall_average) ** 2 for avg in team_averages) / len(team_averages) #calculates the variance of the average tg (standard s^2 variance)
     return variance
 
-def optimize_teams_with_gpa_check(teams_in_tg):
-    DIVERSITY_WEIGHT = 0.70
-    CGPA_WEIGHT = 0.30  #weights
+def optimize_teams(teams_in_tg, diversity_weight=0.70, cgpa_weight=0.30):
+    DIVERSITY_WEIGHT = diversity_weight
+    CGPA_WEIGHT = cgpa_weight #set weights
 
-    for k in range(50): #this number is the number of tests to run
+    for k in range(50): #number of tests to run
         current_diversity_score = sum(diversity_score(t) for t in teams_in_tg)
-        current_cgpa_variance = total_cgpa_variance(teams_in_tg) #calculate the initial score and variance for this instance here
+        current_cgpa_variance = total_cgpa_variance(teams_in_tg) #calculates initial score and variance of current teams
 
-        if current_diversity_score == 0 and current_cgpa_variance < 0.001: #near perfect criteria, prevents unnecessary recursions
+        if current_diversity_score == 0 and current_cgpa_variance < 0.001: #if teams are new perfect, dont change
             break 
 
         best_improvement_score = 0
         best_swap_details = None #instansiation of vars
 
         for i in range(len(teams_in_tg)):
-            for j in range(i + 1, len(teams_in_tg)): #every possible combination of teams
+            for j in range(i + 1, len(teams_in_tg)): #every combination of teams
 
                 for s1_idx in range(len(teams_in_tg[i])):
                     for s2_idx in range(len(teams_in_tg[j])): 
                         team1 = teams_in_tg[i]
-                        team2 = teams_in_tg[j] #every possible combination of students within the teams
+                        team2 = teams_in_tg[j]#every combination of students within the chosen teams
 
-                        team1[s1_idx], team2[s2_idx] = team2[s2_idx], team1[s1_idx] #simulate the swap
+                        team1[s1_idx], team2[s2_idx] = team2[s2_idx], team1[s1_idx]#simulate the swap
 
                         new_diversity_score = sum(diversity_score(t) for t in teams_in_tg)
                         new_cgpa_variance = total_cgpa_variance(teams_in_tg) #new scores for the swap
                         
-                        diversity_improvement = current_diversity_score - new_diversity_score # change in diversity score, we want this to be positive 
-                        cgpa_improvement = current_cgpa_variance - new_cgpa_variance # change in variance, we want this to be positive
+                        diversity_improvement = current_diversity_score - new_diversity_score #change in diversity score
+                        cgpa_improvement = current_cgpa_variance - new_cgpa_variance #change in cgpa variance
 
-                        total_improvement = (diversity_improvement * DIVERSITY_WEIGHT) + (cgpa_improvement * CGPA_WEIGHT)#weighted improvement
+                        total_improvement = (diversity_improvement * DIVERSITY_WEIGHT) + (cgpa_improvement * CGPA_WEIGHT)
 
                         if total_improvement > best_improvement_score:
                             best_improvement_score = total_improvement
-                            best_swap_details = (i, j, s1_idx, s2_idx) #stores the swap details if this is the best possible swap
+                            best_swap_details = (i, j, s1_idx, s2_idx)#if this is the best swap, store it 
 
-                        team1[s1_idx], team2[s2_idx] = team2[s2_idx], team1[s1_idx]#swap back to check the other possibilities before moving on
+                        team1[s1_idx], team2[s2_idx] = team2[s2_idx], team1[s1_idx] #swap back for now to check all other possibilities
         
         if best_swap_details:
             i, j, s1, s2 = best_swap_details
-            teams_in_tg[i][s1], teams_in_tg[j][s2] = teams_in_tg[j][s2], teams_in_tg[i][s1]#sets the best swap found
+            teams_in_tg[i][s1], teams_in_tg[j][s2] = teams_in_tg[j][s2], teams_in_tg[i][s1]#sets the best swap after checking all
         else:
-            break #if we cant find an improvement, stops the loop
+            break#if there are no good swaps, break the loop to save computational power
             
     return teams_in_tg
 
@@ -107,7 +112,7 @@ def GPAoptimized(tutorial_groups: dict):
 
         print(f"Processing Tutorial Group: {tg_name}...")
         initial_teams = snake_draft(students)
-        optimized_teams = optimize_teams_with_gpa_check(initial_teams)
+        optimized_teams = optimize_teams(initial_teams)
         all_optimized_teams[tg_name] = optimized_teams
 
         times.append(time.time() - start)

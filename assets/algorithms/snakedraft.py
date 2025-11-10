@@ -41,7 +41,7 @@ def diversity_score(team): #grades how diverse each group is(lower better)
 
 def optimize_teams(teams_in_tg): 
     # A high number of iterations to allow for thorough optimization
-    for k in range(500):
+    for k in range(50):
         # Calculate scores for all teams
         scores = [diversity_score(team) for team in teams_in_tg]
         total_score = sum(scores)
@@ -101,8 +101,7 @@ def optimize_teams(teams_in_tg):
 
 def snakedraft(tutorial_groups: dict):
     all_optimized_teams = {}
-    
-    # --- Step 2: Process Each Tutorial Group ---
+
     times = []
 
     for tg_name, students in tutorial_groups.items():
